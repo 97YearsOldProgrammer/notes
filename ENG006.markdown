@@ -1,0 +1,66 @@
+## ENG 006 ##
+- week1
+  - [matlab_command](#matlab-comand)
+  - [basic_computer_compoennt](#computer-compoenent)
+  - [numerical_representation](#numerical)
+
+### MATLAB comand ###
+
+| Command | Content                                     |
+|:-------:|:-------------------------------------------:|
+| clc     | clear in python                             |  
+| clear   | clear in python, btw delete every varaibles |
+| diary   | edit something?  diary off means exit       | 
+| exit    | logout MATLAB                               | 
+| who     | show all variables in current workspace     | 
+| whos    | show all varaibles with more information    |
+
+format command
+- format long / short
+- format compact / loose
+
+matlab also support print multiple statements in the same line   
+just seperate them by the 
+
+- ; (semicolon)
+  - this would also not print out that command line
+- , (comma)
+  - this would print out that command line
+
+### computer compoenent ###
+
+| Component | Function                                                     |
+|:---------:|:------------------------------------------------------------:|
+| switch    | first form of stuff that make electric represent 0 or 1      |
+| processors| some stuff to do the calculation                             | 
+| memory    | where different 0 or 1 being stored at                       | 
+| program   | yeah, just stuff sequence of instruction to computer         |
+| complier  | translate high-level language programs into machine language | 
+
+### numerical ###
+
+for integer
+
+- different integer
+  - 8-bit ; up to 255
+  - 16-bit ; up to 65535
+  - 32-bit ; up to 4294967295
+  - 64-bit ; huge number
+
+- signed or unsigned
+  - signed 8-bit   : -128 to 127 (half negative and half positive)
+  - unsigned 8-bit : 0 to 255
+
+for floats
+
+- **decimal normalized scientific notation**   
+  - x*10^x   
+  - one digit before decimal number all the time
+- **binary normalized scientific notation**
+  - x*2^x
+  - share the same rule as above
+
+matlab use the `IEEE754 standard` for floating-point representation
+
+for complex number
+
