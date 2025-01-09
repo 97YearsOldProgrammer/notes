@@ -64,3 +64,23 @@ matlab use the `IEEE754 standard` for floating-point representation
 
 for complex number
 
+- either i or j represent single complex number in matlab
+
+### regular constant ###
+
+| notation | meaning |
+|:--------:|:---------
+| pi       | 3.1415
+| NaN      | sort of not-a-number notation; like evaluation for values that don't have a good math number
+| Inf      | infinite number
+| realmin  | smallest floating-point number
+| real,ax  | largest floating-point number
+
+
+### notation operation ###
+
+someunusual circumstances
+- -4 ^ 2 = -16
+  - since computer do the x^2 first, and then apply the negative value
+  - just have in mind about different priority of notation calculation
+

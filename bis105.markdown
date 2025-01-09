@@ -1,0 +1,121 @@
+## lecture 1 ##
+
+### course material ###
+
+this course is basically bis102 + bis103
+
+*for BIS102*
+
+- amino acids
+- oligopeptides
+- proteins
+- lipids
+- membranes
+
+*for BIS105*
+
+- portions of metabolism
+  - glycolysis
+  - Krebs cycle
+  - ETC
+  - ATP synthase
+  - photosynthesis
+
+### course themes ###
+
+- 1 importance of weak bonds
+  - hydrogen bonds
+  - ionic bond
+  - Van der waals
+  - hydrophobic effect
+
+- ideas of entropy in biochemistry ( basically chemistry in biology )
+  - Delta G = delta H - T * delta S
+  - G : total energy to do work
+  - H : enthalpy (heat)
+  - T : temperature
+  - cells as chemical engines
+
+he said we just kinda remember the ideas of this equation; either from heat or temperature
+recap: negative of gibbs energy means spontaneous
+
+
+### animal cell example ###
+
+he give us a animal cell picture
+he mentioned think of this animal cell from a `dynamic` perspective
+
+- components of cells
+  - 70% H2O
+  - 15% Proteins
+  - 1% DNA 6% RNA as nucleic acids
+  - 3% glucose, glycogen as carbohydrates
+  - 2% lipid ; either for hormones or as fatty acids
+  - 1% other small organic molecules as `NAD+` (nicotinamide adenine dinucleotide) 2e- carrier
+     - example: `FMN` (flavin mononucleotide) 
+     - `FMN` as 1e- carrier : chemically, this is **free-radical**
+     - resonance structure of FMN make this become a free-radical
+  - inorganic ions ; Zn+2, Mg+2, Fe3+, HPO4-2, Cl-, etc
+
+- main atoms
+  - carbon, hydrogen, oxygen, nitrogen, phosphur, sulfur
+
+### biological conclusion ###
+
+- everything is important in a cell
+- biomolecules have evolved to function in an aqueous environment
+  - he want to say that keep in mind that every biological stuff is surrounder by water
+  - and life is dynamic
+
+### Amino acid ###
+
+aa is the building block of proteins
+
+- peptide
+  - N-terminus
+  - a string of amino acids residue 
+  - connect by the peptide bond
+  - C-terminus
+
+also remember everything is surrounded by water H2O
+this gonna folded as long as made, since it's surrounded by water
+inside the peptide is `non-polar` interior, outside is polar
+
+## lecture 2 ##
+
+he start with introducing how different amino acid chemically worked
+| group     | name          | notation | resonance/special |
+|:---------:|:-------------:|:--------:|:------------------
+| R-groups  | 
+|           | asparagine    | N        | cannot form NH3+ there
+|           | glutamine     | Q        | good at forming hydrogen bonds ; pKA 
+|           | serine        | S        |
+|           | threonine     | T        |
+|           | glycine       | G        | tiny
+|acidic     | aspartic acid | D        |
+|ionizable  | glutamic acid | E        |
+| basic     | lysine        | K        |
+|           | arginine      | R        | guanidino
+|           | histidine     | H        | imidazole
+|           | tyrosine      | Y        | can absorb UV light middle
+|           | cysteine      | C        | side chain can react with O2 --> covalent bond with with another cysteine (disulfide bond) 
+|hydrophobic| leucine       | L        |
+|           | isoleucine    | I        |
+|           | valine        | V        |
+|           | alanine       | A        |
+|           | methionine    | M        |
+|           | proline       | P        |
+|           | phenylalanine | F        | can absorb UV light worst
+|           | trytophan     | W        | have indole ring in it ; can absorb UV light best
+
+- indicator of how well they can absorb UV light
+  - W > Y > F
+  
+- importance of cysteine sulfer bond
+  - SH group better be maintained 
+  - otherwise, it would form the disulfide bond with another cysteine with interaction with oxygen
+  - btw disulfide bond make proein more stable
+- laboratory solution to this
+  - we pour excess `mercaptoethanol: HSCH2 - CH2OH` in there
+  - would go the disulfide exchange reaction
+  - 
