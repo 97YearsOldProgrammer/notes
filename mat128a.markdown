@@ -132,3 +132,61 @@ p - q = 0.002
 abosolute error = | p - p* | 
 relative error  = | absolute error | / |p| = 0.25 huge on this one
 ```
+
+----------------------------------------------------------------------------------------
+
+## 3rd lecture ##
+
+### Taylor expansion ###
+
+- *approximate of functions*
+  - given a function f(x) ; the area of from point a to point x gonna be this formula
+  - f(x) ≈ f(a) + f'(a)(x-a) 
+  - linear function approximation 
+  - yeah, it's true as linear approach
+  - this is not such good approximation ; scope limited
+
+- quadratic function? higher polynominal approximation
+  - f(x) ≈ f(a) + f'(a)(x-a) + f''(a)/2!(x-a)^2
+  - reason why this one is better
+    - they share the same point at q(a)[new f(a)] = f(a)
+    - they have the same slope ; first derivative
+    - they have the same curvarate ; second derivative
+
+- with this logic, given a higher polynominal taylor expression
+  - we could get Σ(n, k=0) f(k)(a) / ( (k!) (x-a)^k )
+  - the error approximation term gonna be : f(n+1)(error)/( (n+1)! ) (x-a)^(n+1)
+
+### Lagrange interpolation ###
+
+- given the simplest form of function(x) approximation given coordinates of two points
+  - y = k[slope](x - xo) + f(xo)
+  - k = ( f(x1) - f(xo) ) / (x1 - xo) = Δy/Δx
+  - the general term below shows that
+    - x = xo --> f(xo)
+    - x = x1 --> f(x1) 
+
+```
+y =  ( ( f(x1) - f(xo) ) / (x1 - xo) )(x - xo) + f(xo)
+y = ( f(x1)/(x1 - xo) - f(xo)/(x1 - xo)  )((x - xo) ) + f(xo)  <-- just extend the term k
+y =  ( (x - xo)/(x1 - xo) )f(x1) -  ( (x - xo)/(x1 - xo) )f(xo) + f(xo) <-- further extension here
+y = (x - xo)/(x1 - xo) )f(x1) + (x - xo)/(xo - x1) )f(xo) + f(xo) <-- flip the sign
+y = (x - xo)/(x1 - xo) )f(x1) + ( (x - xo)/(xo - x1) + 1 )f(xo)   <-- short the term
+y = (x - xo)/(x1 - xo) )f(x1) + (x - x1)/(xo - x1)f(xo) <-- general form for linear out there
+```
+
+- introducing quaradic function back
+  - we need three points right now for quadratic function approximation
+  - if we look back the linear general form; we can conduct that
+  - (x - x1)(x - x2)/(xo - x1)(xo - x2) f(xo) + (x - xo)(x - x2)/(x1 - xo)(x1 - x2) f(x1) + (x - xo)(x - x1)/(x2 - xo)(x2 - x1)f(x2)
+  - he said we could proof this similarly , three points are on f(x)
+  - not sure how, btw
+  - x = xo --> f(xo) + o + o = f(xo)
+  - x = x1 --> f(x1)
+  - x = x2 --> f(x2)
+  
+- n-terms of lagrange interpolation
+  - f(x) ≈ Pn(x) = a_n x^n + a_n-1 x^n-1 + ... a1 x1 + ao
+  - if we expand this, this gonna looks terrible
+  - btw ho we doing this, is shown above
+  - the final formula gonna be `Pn(x) = Σ(n, k=0) ( Π(n, i=0) (x-xi/xk-xi) ) f(xk)

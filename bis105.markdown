@@ -81,6 +81,8 @@ also remember everything is surrounded by water H2O
 this gonna folded as long as made, since it's surrounded by water
 inside the peptide is `non-polar` interior, outside is polar
 
+----------------------------------------------------------------------------------------
+
 ## lecture 2 ##
 
 he start with introducing how different amino acid chemically worked
@@ -118,4 +120,123 @@ he start with introducing how different amino acid chemically worked
 - laboratory solution to this
   - we pour excess `mercaptoethanol: HSCH2 - CH2OH` in there
   - would go the disulfide exchange reaction
-  - 
+
+----------------------------------------------------------------------------------------
+
+## lecture 3 ##
+
+- in vivo    
+  - it's largely composed by different layer of membrane   
+  - oxygen are able to cross anywhere those membrane
+  - inside mitochondrion, there is Electron transport chain there, ultilze the oxygen
+    - complex 4 of ETC requires oxygen --> water ; as electron acceptor
+  - oxygen is always oxidizing everything with this mechanis
+
+- cells use `glutathione( y-E-C-G[glycine] ), NADPH and enzyme` to keep SH groups reduced
+  - glutathione used to keep SH groups reduced
+  - NADPH is the reducing agent ; it would reduced oxidized glutathione 
+  - enzyme is speeding up the NADPH ; some energy is ultilze to replenish NADPH
+
+### weak acids/bases (part1) ###
+
+**importance of pH**   
+
+cells use buffers <-- mixation of weak acids and weak bases   
+pH of buffers are used to maintain their proper function   
+whenever we wanna study cells, we need buffer to maintain buffer for cells    
+monoprotic weak acids ; polyprotic weak acids   
+
+- pH
+  - pH = - log aH+
+  - aH+ is the acitivty of H+ (effective concentration)
+  - a = γc <-- M, the amount you weighted out in a certain volume
+    - 0 < y <= 1 
+    - γ = activity coefficient 
+    - he said it's not always that ideal situation to make buffer  
+
+- sodium chloride to γ
+  - sodium make -1 in γ (charge)
+  - choride make +1 in γ (cahrge)
+  - change in γ is not always linear relationship with concentration change
+  - since there is charging for shielding 
+
+- weak acid
+  - HA -> H+ + γA-
+  - HA <------- H+ + γA-
+  - weak acid is poor on donating proton
+  - activity coefficient is complicated
+  - btw we need this to do precise calculation 
+  
+- for dilute buffer
+  - we use the quadratic equation directl to calculation
+  
+- for non-dilute buffer
+  - we should not use the quadratic equation
+  - it's not exit in our course  
+
+- at buffer concentrations of 0.1M or higher, y's < 1 
+  - pH = - log[H+] 
+  
+- strong acid
+  - something completely dissociated when add to water
+  - do not included by `henderson-hasselbalch equation`
+  - example of strong acid
+    - HCl (chloride ion usually don't screw up biological process)  <-- never should be in a buffer
+      - `anything other than quiz than HCl, is weak acid`
+      - in our course, we care about most
+    - HNO3 (nitric acid) <-- good at 90% organic material
+    - H2SO4 (sulfric acid) <-- form a precipitate
+
+- strong base
+  - NaOH (sodium hydroxide)
+  - KOH (potassium hydroxide) 
+  - never belong to the `henderson-hasselbalch equation`
+  - `any base that are not OH- must be weak`
+  - whenever we mix with some strong and weak, the strong gonna win
+
+```
+weak acid environment
+
+example1
+
+HA + H2O -> H3O+ + A- ; HA + H2O <------ H3O+ + A-
+  
+example2
+
+HA -> H+ + A- ; HA <-------- H+ + A-
+y-x          x    x
+Ka = [H+][A-] / [HA]
+Ka = x^2/(y-x)
+x  = [H+]
+pH = -log[H+]
+```
+
+- *derived of Henderson-Hasselbalch equation*
+  - log[Ka] = log[H+]+ { log[A-] / [HA] }
+  - -log[H+] = - log Ka + log{[b]/[a]}
+  - pH = pKa + log{[b]/[a]}
+  - in both top and bottom of the titration curve ; we cannot use this equation
+    - since at top and bottom, either acid would be 0 or base = 0 
+    - the equation is not gonna make sence out there
+  - in the middle of titration curve
+    - [b] = [a]
+    - pH = pKa
+  - a good buffer is when the pH is within +/- 1 ph unit from pKa   
+
+
+we shall learn how to do this ; like how to calculate this    
+also learn when should we use those equations     
+
+```
+weak base environment
+
+A- + H2O -> HA + OH ; A- + H2O <------- HA + OH
+A- -> HA + OH ; A- <------- HA + OH
+y-x   x    x
+
+Kb = [HA][OH-]/[A-]
+Kb = x^2/(y-x) <-- x is almost 0 compare to y
+[Ka][Kb] = 1x10^-14
+x  = [OH-]
+```
+

@@ -4,6 +4,8 @@
   - [hydrostatic system](#hydrostatic-system)
   - [hydrodynamic system](#what-if-the-fluid-is-flowing)
 
+-----------------------------------------------------------------------------------------------------------------------------------
+
 ## Lecture1 ##
 
 we look into the hydrostatic system and go over differnt principle that applies to them
@@ -123,3 +125,64 @@ Extended/Complete Bernoulli equations:
 △(Eth/V) = IR
 R = resistance between whatever point you're considering
 [R] = Js/m^6
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## DL1 ##
+
+TA information   
+name:  antyom   
+email: alistisyn@ucdavis.edu  
+room: 2314    
+OH: monday 5:00 - 6:30    
+
+```
+ΔE_tot / vol   = W   
+ΔPE_grav/ vol  = p * g Δy
+ΔKE/vol        = 1/2 p Δ(v^2)
+ΔE_thermal/vol = I(water flow)R(resistance of pipe[something inside the pipe])
+ΔP(pressure)   = he said this is considered lastly 
+```
+
+- energy density equation
+  - ΔKE/vol + ΔPE_grav/vol + ΔP = E_pvmp/vol - ΔEth/vol
+
+- continuity equation
+  - I1 = I2
+  - the water comes in == water comes out 
+  - reminder: I = water flow
+  - variable contribute to I
+    - speed of water
+    - container size
+
+- scenario
+  - when container size is larger, speed remain constant, the I become larger
+
+- more about continuity equation
+  - since I1 = I2
+  - if one side of the pipe have larger Volume, it's gonna have smaller speed
+  - for another side of the pipe that have smaller volume, it's gonna have large speed to maintain I1 = I2 
+
+- change in resistance would not decrease the water velocity
+  - since v = I/A
+  - btw change in area would effect the velocity
+
+- a way to think about pressure
+  - ΔP means pascal
+  - pressure is force
+  - force = F/A = [J/m] / [m^3] = [ J/m^3 ]
+  - F = W(word/d(distance)
+  - force is sort of stored energy
+
+- guage pressure
+  - some pressure don't include the atomsphere pressure
+  - something don't compare to atomsphere pressure
+  - ppl use this for tire pressure (like 40psi)
+  - this is the pressure difference
+  - Pbottom - Ptop = pgΔy
+  - this is ΔPressure
+
+- absolute pressure
+  - guage pressure + Patm
+  - 
+![alt text](/image/image.png =100x100)  
