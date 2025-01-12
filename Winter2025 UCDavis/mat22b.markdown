@@ -239,13 +239,13 @@ Resistance proportional to downward velocity v(t) of mass
   - $du/dt = pu$
   - $∫ du/u = ∫ p(t)dt$
   - $ln|u| = \int p(t)dt + C$
-  - $|u(t)| = C* e^[∫p(t)dt]$ ; make every single time become e^original term here
-  - $u(t)  = +/- C e^[∫p(t)dt]$
-  - $u(t)  = e^[∫p(t)dt]$
-  - final formula for u(t): $u(t) = e^[∫p(t)dt]$
+  - $|u(t)| = C* e^(∫p(t)dt)$ ; make every single time become e^original term here
+  - $u(t)  = +/- C e^(∫p(t)dt)$
+  - $u(t)  = e^(∫p(t)dt)$
+  - final formula for u(t): $u(t) = e^(∫p(t)dt)$
 
 - check on formula conduction
-  - $du/dt = e^[∫p(t)dt] * d/dt[∫p(t)dt]$
+  - $du/dt = e^(∫p(t)dt) * d/d(∫p(t)dt)$
   - $du/dt = u(t)*p(t)$ 
   - so this proof that our formula work out there
   - $u' = pu$
@@ -254,7 +254,6 @@ Resistance proportional to downward velocity v(t) of mass
   - $y' + py = g$
   - $uy' + upy = ug$
   - $(uy)' = ug$
-
-
-
-$\int_a^b f(x) \, dx = F(b) - F(a)$
+  - $\int (uy)'dt = \int ug dt + C$
+  - $uy = \int ugdt + C$
+  - $y(t) = 1\over u(t) \int u(t)g(t)dt + C\over u(t)$
