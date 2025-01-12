@@ -194,3 +194,78 @@ Resistance proportional to downward velocity v(t) of mass
   - ∫t^2 dt = 1/3 t^3 + C
   - ∫ (t, 1) s^2 ds = [1/3 s^3](t, 1) = 1/3t^3 - 1/3 
 
+------------------------------------------------------------------------------------------------------------
+
+## lecutre 3 ##
+
+### first oder linear equation ###
+
+- linear ; scalar, first order ODEs
+  - y' + p(t)y = g(t)
+  - where p(t) , g(t) are given continous functions
+  
+- Homogeneous if g(t) = 0
+  - ( <=> y(t) = 0 is a solution) 
+  - otherwise non-homogeneous
+
+- constant coefficient 
+  - if p(t) = a is a constant
+  - otherwise variable coefficient
+  
+| example     |  homogenous | coefficient |
+|:-----------:|:-----------:|:-------------
+| y' + ty = 2 | non-homo    | variable cf |
+| y' + 2y = t | non-homo    | constant cf |
+| y' + 2y = 0 | homo        | constant cf |
+
+### integration factor method{2.1 text} ###
+
+- $y' + p(t)y = g(t)$
+  - try integrating ODE
+  - $∫ y'(t)dt + ∫ p(t)y(t)dt = ∫ g(t)dt + C$
+  - $y(t) + ∫ p(t)y(t)dt = ∫ g(t)dt + C$
+  - converted a differential equation to an integral equation; this don't help out there
+  
+- introduce our method here
+  - seek an integrating factor u(t) such that we can integrate the ODE to get y(t)
+  - $u(t)y' + p(t)u(t)y = u(t)g(t)$
+    - one thing about this method, we try to make the left hand sight could be directly product of one differentiation
+    - ( uy )' = uy' + puy <-- this is the product rule
+    - (uy)' = uy' + u'y
+    - we need u(t) to satisfy that : u' = pu
+  
+- we need a formal calculation to find u' here
+  - below is the overall breakdown formula conduction for our question 
+  - $du/dt = pu$
+  - $∫ du/u = ∫ p(t)dt$
+```
+```
+separate variables
+∫ du/u = ∫ p(t)dt
+ln|u| = ∫p(t)dt + C
+  we times e^ something on everything here
+  so that this formula could be further break down
+|u(t)| = C* e^[∫p(t)dt]
+u(t)  = +/- C e^[∫p(t)dt]
+u(t)  = e^[∫p(t)dt]
+
+when constant +/-C 
+  u(t) = e^[∫p(t)dt]
+```
+
+- check on formula conduction
+  - du/dt = e^[∫p(t)dt] * d/dt[∫p(t)dt]
+  - du/dt = u(t)*p(t) 
+  - so this proof that our formula work out there
+  - u' = pu
+
+- back to original system
+
+```
+y' + py = g
+uy' + upy = ug
+(uy)' = ug
+```
+
+
+$\int_a^b f(x) \, dx = F(b) - F(a)$
