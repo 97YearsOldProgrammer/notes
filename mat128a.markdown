@@ -1,5 +1,18 @@
 # mat128a #
 
+- [1st lecture](#1st-lecture)
+  - [IEEE-754 and double precision](#ieee-754-standard)
+- [2nd lecture](#2nd-lecture)
+  - [chopping and rounding](#more-on-question-about-how-computer-represent-numerical-stuff)
+  - [absolute and relative error](#abosolute-and-relative-error)
+  - [sample calculation](#how-computer-did-the-mathmatical-operation-for-floating-calculation)  
+- [3rd lecture](#3rd-lecture)
+  - [Taylor Expression](#taylor-expansion)
+  - [Lagrange interpolation](#lagrange-interpolation)
+- [4th lecture](#4th-lecture)
+  - [Lagrange basis](#lagrange-basis-function)
+  - [compare lagrange and taylor](#why-lagrange-is-better-than-taylor-approximation)
+  - [python code display on lagrange](#python-code-for-lagrange-basis)  
 ----------------------------------------------------------------------------------------
 
 ## 1st lecture ##
@@ -190,3 +203,65 @@ y = (x - xo)/(x1 - xo) )f(x1) + (x - x1)/(xo - x1)f(xo) <-- general form for lin
   - if we expand this, this gonna looks terrible
   - btw ho we doing this, is shown above
   - the final formula gonna be `Pn(x) = Σ(n, k=0) ( Π(n, i=0) (x-xi/xk-xi) ) f(xk)
+
+----------------------------------------------------------------------------------------------------
+
+## 4th lecture ##
+
+he continue illustration about the lagrange interpolation  
+
+### lagrange basis function ###
+
+whenever we want make approximatio for any p(x) ≈ f(x) , and such P(xi) = f(xi)   
+$$P(x) = \sum_{k=0}^{n}[ \prod_{i=o ; i \neq k}^{n} \frac{(x-xi)}{(xk - xi)} ]f(xt)$$    
+$[ \prod_{i=o ; i \neq k}^{n} \frac{(x-xi)}{(xk - xi)} ]$ = Ln,k(x)   
+he said the basis function is sort of lineaer algebra ideas about basis   
+it's just making linear combination way for making such approximation
+
+- for a given system
+  - x =  1 ; $x=xk$
+  - x =  0 ; when x for any number except x = xk
+
+- this can be solve by lagrange basis function
+  - $P(x) = \sum_{k=0}^{n} f(xk) Ln,k(x)$
+  - f(xk) is some number
+
+- $P(xi) = \sum_{k=0}^{n}f(xi) | n,k(xi)$
+  - when k = i --> Ln,k(xi) =  1
+  - when $ k != i --> Ln,k(xi) = 0
+  - so that we can simply this whole equation into 
+  - $P(xi) = \sum_{k=i}f(x)$
+  - final solution: $f(xi)$
+
+- text-book example
+  - f(x) = 1/x ; xo = 2 ; x1 = 2.75 ; x2 = 4 ; we wanna make approximation on f(3) ≈ what 
+  - L2,0(x) = $\frac{(x-x1)(x-x2)}{(xo-x1)(xo-x2)}$
+  - L2,1(x) = $\frac{(x-x0)(x-x2)}{(x1-x0)(x1-x2)}$
+  - L2,2(x) = $\frac{(x-x0)(x-x1)}{(x2-x1)(x2-x1)}$
+
+- so the original function become P(x) = f(xo)L3,0(x) + f(x1)L3,1(x) + f(x2)L3,2(x)
+  - how we did calculation this shit
+  - x = whatever x value we wannt find ; legit P(x) <-- x
+  - x0, x1, x2 is the terms given before 
+  - f(3) through such approximation P(3) is 0.32955
+  - to be honest, this approximation sounds like the `Gram-Schmidt algorithm`
+  
+### Why lagrange is better than Taylor approximation ###
+
+- theorem  f ∈ $C^{n+1}[a,b]$ , assume x0, x1, .... , xn ∈ [a,b] and $f^{n+1}$ exists and continous   
+  - then for any x ∈ [a,b]   
+  - in the lagrange way
+    - f(x) = P(x) + $\frac{f^{n+1}(x)}{(n+1)!} (x-xo)(x-x1)....(x-xn)$
+  - in the Taylor way
+    - f(x) = P(x) + $\frac{f^{n+1}(x)}{(n+1)!} (x-a)^{n+1}  
+
+- conclusion
+  - in lagrange way; each n-a term is dynamically changed by making next possible value
+  - than in Taylor way; each x - a term is fixed, not changing
+
+### python code for lagrange basis ###
+
+he showed with python code; we wanna make approximation for the sin(x) function   
+well he didn't show how to write that in the python ; he use library numpy for making function and matploit to graph   
+it's clear that as long as the n become larger, the approximation become better ; it works   
+  
