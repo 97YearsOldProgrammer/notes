@@ -1,18 +1,19 @@
 # mat128a #
 
-- [1st lecture](#1st-lecture)
-  - [IEEE-754 and double precision](#ieee-754-standard)
-- [2nd lecture](#2nd-lecture)
-  - [chopping and rounding](#more-on-question-about-how-computer-represent-numerical-stuff)
-  - [absolute and relative error](#abosolute-and-relative-error)
-  - [sample calculation](#how-computer-did-the-mathmatical-operation-for-floating-calculation)  
-- [3rd lecture](#3rd-lecture)
-  - [Taylor Expression](#taylor-expansion)
-  - [Lagrange interpolation](#lagrange-interpolation)
-- [4th lecture](#4th-lecture)
-  - [Lagrange basis](#lagrange-basis-function)
-  - [compare lagrange and taylor](#why-lagrange-is-better-than-taylor-approximation)
-  - [python code display on lagrange](#python-code-for-lagrange-basis)  
+- [mat128a](#mat128a)
+  - [1st lecture](#1st-lecture)
+    - [IEEE-754 Standard](#ieee-754-standard)
+  - [2nd lecture](#2nd-lecture)
+    - [more on question about how computer represent numerical stuff](#more-on-question-about-how-computer-represent-numerical-stuff)
+    - [abosolute and relative error](#abosolute-and-relative-error)
+    - [how computer did the mathmatical operation for floating calculation](#how-computer-did-the-mathmatical-operation-for-floating-calculation)
+  - [3rd lecture](#3rd-lecture)
+    - [Taylor expansion](#taylor-expansion)
+    - [Lagrange interpolation](#lagrange-interpolation)
+  - [4th lecture](#4th-lecture)
+    - [lagrange basis function](#lagrange-basis-function)
+    - [Why lagrange is better than Taylor approximation](#why-lagrange-is-better-than-taylor-approximation)
+    - [python code for lagrange basis](#python-code-for-lagrange-basis)
 ----------------------------------------------------------------------------------------
 
 ## 1st lecture ##
@@ -251,9 +252,9 @@ it's just making linear combination way for making such approximation
 - theorem  f ∈ $C^{n+1}[a,b]$ , assume x0, x1, .... , xn ∈ [a,b] and $f^{n+1}$ exists and continous   
   - then for any x ∈ [a,b]   
   - in the lagrange way
-    - f(x) = P(x) + $\frac{f^{n+1}(x)}{(n+1)!} (x-xo)(x-x1)....(x-xn)$
+    - f(x) = P(x) + $\frac{f^{n+1}(δ)}{(n+1)!} (x-xo)(x-x1)....(x-xn)$
   - in the Taylor way
-    - f(x) = P(x) + $\frac{f^{n+1}(x)}{(n+1)!} (x-a)^{n+1}  
+    - f(x) = P(x) + $\frac{f^{n+1}(δ)}{(n+1)!} (x-a)^{n+1}$ 
 
 - conclusion
   - in lagrange way; each n-a term is dynamically changed by making next possible value
