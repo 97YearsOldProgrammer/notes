@@ -239,13 +239,13 @@ Resistance proportional to downward velocity v(t) of mass
   - $du/dt = pu$
   - $∫ du/u = ∫ p(t)dt$
   - $ln|u| = \int p(t)dt + C$
-  - $|u(t)| = C* e^(∫p(t)dt)$ ; make every single time become e^original term here
-  - $u(t)  = +/- C e^(∫p(t)dt)$
-  - $u(t)  = e^(∫p(t)dt)$
-  - final formula for u(t): $u(t) = e^(∫p(t)dt)$
+  - $|u(t)| = C e^{∫p(t)dt}$ ; make every single time become e^original term here
+  - $u(t)  = \pm C e^{∫p(t)dt}$
+  - $u(t)  = e^{∫p(t)dt}$
+  - final formula for u(t): $u(t) = e^{∫p(t)dt}$
 
 - check on formula conduction
-  - $du/dt = e^(∫p(t)dt) * d/d(∫p(t)dt)$
+  - $du/dt = e^{∫p(t)dt * \frac{d}/{d∫p(t)dt} }$
   - $du/dt = u(t)*p(t)$ 
   - so this proof that our formula work out there
   - $u' = pu$
@@ -256,4 +256,34 @@ Resistance proportional to downward velocity v(t) of mass
   - $(uy)' = ug$
   - $\int (uy)'dt = \int ug dt + C$
   - $uy = \int ugdt + C$
-  - $y(t) = 1\over u(t) \int u(t)g(t)dt + C\over u(t)$
+  - $y(t) = \frac{1}{u(t)} \int u(t) g(t) \, dt + \frac{C}{u(t)}$
+  - e to any circumstance is non-zero
+  - so define such u(t) is not gonna be a problem
+  - key take away: $u(t) = e^(p(t))$
+  
+- example $y' + ty = t$
+  - $p(t) = t$ ; $g(t) = t$
+  - $\int p(t)dt = \int tdt = \frac{1}{2} t^{2}$
+  - $u(t) = e^{\int pdt} = e^{\frac{1}{2} t^{2}}$
+  - $e^{\frac{t^{2}}{2}}y' + te^{\frac{t^{2}}{2}} = te^{\frac{t^{2}}{2}}$
+  - $(e^{\frac{t^{2}}{2}})' = te^{\frac{t^{2}}{2}}$
+  - $e^{\frac{t^{2}}{2}}y = \int tte^{\frac{t^{2}}{2}}dt+ C$
+  - solving the right hand side with further substitution
+    - $u = \frac{t^{2}}{2}$ $du = tdt$ 
+    - $\int tte^{\frac{t^{2}}{2}}dt = \int e^{u}du = e^{u} + C$
+    - $e^{\frac{1}{2}t^{2}} + C
+  - **final solution here**: $y(t) = 1 + Ce^{-\frac{1}{2}t^{2}}$
+  - we now get the general solution for the differential equation here
+
+- check back the original system
+  - $y' + ty = -C(t)e^{-\frac{1}{2}t^{2}} + t(1+Ce^{-\frac{1}{2}t^{2}})
+  - they cancel out
+  - y' + ty = t ; we get back the same answer out there 
+
+- further understanding
+  - solution of homogeneous equation
+  - $z' + tz = 0$ is $z(t) = Ce^{-\frac{1}{2}t^{2}}$ 
+  - $y(t) = 1 + Ce^{-\frac{1}{2}t^{2}}$
+  - number 1 is the particular solution of non-homogeneous ODE
+  - exponent of e is the aribitrary constant C times a solution of corresponding homogenous ODE
+  - get general solution by superposing a particular solution of nonhomogenous equation and constant x solution of homogeneous equation

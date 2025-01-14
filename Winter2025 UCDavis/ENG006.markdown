@@ -3,6 +3,8 @@
   - [matlab_command](#matlab-comand)
   - [basic_computer_compoennt](#computer-compoenent)
   - [numerical_representation](#numerical)
+  
+------------------------------------------------------------------------------------------------
 
 ### MATLAB comand ###
 
@@ -84,3 +86,70 @@ someunusual circumstances
   - since computer do the x^2 first, and then apply the negative value
   - just have in mind about different priority of notation calculation
 
+----------------------------------------------------------------------------------------------------------
+
+### boolean in matlab ###
+
+it's called logical operator there, 1 is true, 0 is false ; assigning them in matlab is varaiblename = 0 or variablename = 1
+
+| logical operator | meaning |
+|:----------------:|:---------
+| basic logical operator
+| x & y            | this is x and y in python
+| x | y            | this is x or y in python
+| ~x               | this is not(x) in python
+| (none)           | as long as there is one true, it's true, false when both are true
+| short circut logical operators
+| x && y           | whenever x is true, y is checked ; whenever x is false, y  is not checked
+| x || y           | whenever x is true, y is not check ; whenever x is false, y is checked
+
+### priority of logical operation check ###
+
+( ) > ^ > negation > + / + - math operation > relational operator > & > | > && > ||
+
+### other operator in matlab ###
+
+| operator | description |
+|:--------:|:------------
+| logical operator
+| x == y   | x equals y  
+| x ~= y   | x does not equal y
+| realational operator
+| a < b    | 
+| a > b    |
+| a <= b   |
+| a >= b   |
+
+- some exception in matlab
+- for example 0 < something < 9
+  - matlab would operate lefthand side first
+  - and either something is inside or outside this range
+  - it would return either true == 1 ; or false == 0
+  - so this gonna compare the righthand side to 100% return a True
+
+### matlab script ###
+
+it's something different than python library, it have sort of way u have to store it in some format and call them up later on whenever we wanna use that    
+the script can be either stored by .m or .mlx   
+
+### matlab comment ###
+
+it's using the % percentage notation for writing a comment than # in  python 
+| comment way | how we do that 
+|:-----------:|:---------------
+| % something | this is the single line comment
+|%{something}%| this is multiple line comment 
+
+### matlab function ###
+
+```
+function something we want to operate or input out there
+
+lines we want everything to operate
+etc
+
+end
+```
+that's how everything works out
+
+they also call something `local function` --> this means function whoever locate at the end of a script and appearantly not a sharable function
