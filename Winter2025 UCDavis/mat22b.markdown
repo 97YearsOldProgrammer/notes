@@ -287,3 +287,87 @@ Resistance proportional to downward velocity v(t) of mass
   - number 1 is the particular solution of non-homogeneous ODE
   - exponent of e is the aribitrary constant C times a solution of corresponding homogenous ODE
   - get general solution by superposing a particular solution of nonhomogenous equation and constant x solution of homogeneous equation
+
+------------------------------------------------------------------------------------------------------------
+
+## lecture 4 ##
+
+- **integrating factor method**
+  - recall from last lecture
+  - $y' + p(t)y g(t)$
+  - 1 compute integrating factor
+    - $u(t) = e^{\int p(t)dt}$
+  - 2 multiply ODE by u(t) and write left-handside as an exact derivative
+    - $(uy)' = ug
+  - 3 integrate and solve for y(t)
+    - we now get the general solution that depending on arbitary constant of integration C  
+
+- to solve an initial value problem (IVP)
+  - $$\begin{cases} y' + p(t)y = g(t), \\y(t_0) = y_0.\end{cases}$$
+  - 1 find general solution
+  - 2 use initial condition to find c in terms of yo
+
+### example solved by integrating factor method ###
+
+- y' + ty = t 
+  - $u(t) = e^{\int tdt} = e^{\frac{1}{2}t^{2}}$   
+  - $e^{\frac{1}{2}t^{2}}y' + te^{\frac{1}{2}t^{2}}y = te^{\frac{1}{2}t^{2}}$
+  - $(e^{\frac{1}{2}t^{2}}y)' = te^{\frac{1}{2}t^{2}}$
+  - $(e^{\frac{1}{2}t^{2}}y) = \int{t e^{\frac{1}{2}t^{2}} } + C = e^{\frac{1}{2}t^{2}} + C$
+  - $y(t) = 1 + Ce^{-\frac{1}{2}t^{2}}$
+
+### example on solving initial value probelm
+
+- $$\begin{cases} y' + ty = t, \\y(2) = 0.\end{cases}$$
+  - giving previous general solution $y(t) = 1 + Ce^{-\frac{1}{2}t^{2}}$
+  - evaluate at to = 2
+  - $y(2) = 1 + Ce^{-2}$
+  - $0 = 1 + Ce^{-2}$
+  - $Ce^{-2} = -1$
+  - $C = -e^{2}$
+  - final answer: $y(t) = 1 - e^{2}e^{-\frac{1}{2}t^{2}}$
+
+- not quite sure, btw he also talks about some property about even and odd function
+  - for verify the final answer
+
+### mass falliong under gravity example ###
+
+| condition | meaning 
+|:---------:|:---------
+| v(t)      | velocity
+| m         | mass
+| g         | accerlation gravity
+| $\rho$    | drag constant
+
+- $m \frac{dV}{dt} = mg - \rho v$
+  - $\frac{dV}{dt} = g -  λv$ ;  $λ = \frac{\rho}{m}$
+  - $\frac{dV}{dt} +  λv = g$ ; p(t) =  λ
+  - $\int{p(t)dt} = \int λdt = λt ; u(t) = e^{λt}$
+  - $e^{λt}\frac{dV}{dt} + λe^{λt}v = ge^{λt}$
+  - $(e^{λt}v)' =ge^{λt}$
+  - $\int{e^{λt}v}'dt = \int{ge^{λt}dt} + C
+  - $e^{λt}v = \frac{g}{λ}e^{λt} + C ; v = \frac{g}{λ}$
+  - $v(t) = v + Ce^{-λt}$
+  - now we find the general solution there
+
+- initial value problem
+  - $$\begin{cases} \frac{dV}{dt} = g - λv \\v(0) = vo\end{cases}$$ 
+  - $v(t) = v* + Ce^{-λt}$ ; v* = g/λ
+  - At t = 0 ; $vo = v* + C$ --> $C = vo - v*$
+  - $v(t) = v* + (vo - v*)e^{-λt}$
+
+### another example ###
+
+-  y' + ty = 1
+  - $p(t) = t \int p(t)dt = \frac{1}{2}t^{2} u(t) = e^{\frac{1}{2}t^{2}}$
+  - times everything
+  - $e^{\frac{1}{2}t^{2}}y = \int e^{\frac{1}{2}t^{2}} dt + C$
+  - $y(t) = e^{-\frac{1}{2}t^{2}} \int e^{\frac{1}{2}t^{2}}dt + Ce^{-\frac{1}{2}t^{2}}$
+  - as long as it's here, it's considered to solve here
+  
+- y(0) = 2; initial value problem here
+  -  $\int e^{\frac{1}{2}t^{2}}dt = \int_{0}^{t}e^{\frac{1}{2}s^{2}}ds + C$
+  -  $y(t) = e^{-\frac{1}{2}t^{2}}\int_{0}^{t}e^{\frac{1}{2}s^{2}}ds + Ce^{-\frac{1}{2}t^{2}}$
+  -  y(0) = 2 
+  -  $2 = Ce^{0}$ ; c = 2
+  -  $y(t) = e^{-\frac{1}{2}t^{2}} \int_{0}^{t}e^{\frac{1}{2}s^{2}}ds + 2e^{-\frac{1}{2}t^{2}}$

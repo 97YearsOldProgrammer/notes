@@ -12,19 +12,33 @@
 | condition probability                              | $P( A \mid B)$
 | binomial distribution                              | $P(k '1's out of N) = \binom{N}{k} p^{k} (1 - p)^{N - k}$
 | the gaussian distribution/ aka normal distribution | $f(x) = \frac{1}{σ \sqrt{2\pi } } e^{\frac{-1}{2} { \frac{x - u}{σ} }^{2} }$
+| multinomial distribution                           | $P( n \mid \theta) = M^{-1}(n)\sum_{i=1}^{K} \theta i^{ni}$
 
 ### condition probability ###
 
-this is some events happening given condition that some events have already happend ,for example, for event A as something might not works, given that event B as something has already set up, the probability of the whole thing could be represented by such probability notation here $P(A \mid B)$, and I still remember $P(A \mid B)$ is not equal to $P(B \mid A)$   
+$$P(A \cap B) = P(A)*P(B \mid A)$$
+
+this is some events happening given condition that some events have already happend ,for example, for event A as something might not works, given that event B as something has already set up, the probability of the whole thing could be represented by such probability notation here $P(A \mid B)$, and I still remember $P(A \mid B)$ is not equal to $P(B \mid A)$  
+
+$$\frac{P(A \cap B)}{P(A)} = P(B \mid A)$$
 
 - a real probability question to ponder
   - if we wanna if event $P(A \cup B)$; it's the union notation ; it just means probability of event A and B  
   - we can use formula $P(A \cup B ) = P(A) + P(B) + P(A \cap B)$
     - $P(A \cap B)$ it's the intersection notation ; means probability of event A and B happens
-    - $P(A \cap B) = P(A)*P(B \mid A)$
 
 ### binomial distribution ###
 
+- **bernoulli distribution** 
+- $$P(X = x) = \begin{cases} p & \text{if } x = 1, \\1 - p & \text{if } x = 0.\end{cases}$$
+  - this state that every possible trail have a discrete outcome
+  - is studied the single trail out there
+  - which is either 0(false) and 1(true)
+  - binary outcome
+
+- generalizing the bernoulli distribution --> allow multiple trails
+  - we would have the **binomial distribution**
+ 
 $$P(k '1's out of N) = \binom{N}{k} p^{k} (1 - p)^{N - k}$$  
 - given a finite set
   - consisting of all the possible results of N tries of an experiment
@@ -61,9 +75,20 @@ after we learned the binominal distribution ; given a set of experiment N with g
 
 this is the generalization form of binomial distribution, this multinomial distribution have to satisfied one condition that `each trail shall be independent to each other` otherwise it don't satisfied the condition for this
 
-The probability of getting ni occurrences of outcome i is given by
+- The probability of getting ni occurrences of outcome i is given by
 $$P( n \mid \theta) = M^{-1}(n)\sum_{i=1}^{K} \theta i^{ni}$$
 
+- The normalising constant depends on the total number of outcomes observed
+$$M(n) = \frac{\prod_{i}ni!}{(\sum_{k}nk)!}$$
+
+whenever k = 2, it turns into the binominal distribution
+
+### beta distribution ###
+
+compared to normal distribution and bernulli distribution
+### The dirichlet distribution ###
+
+$\mathcal{D}(\theta \mid \alpha) = Z^{-1}(\alpha) \prod_{i=1}^K \theta_i^{\alpha_i - 1} \delta \left( \sum_{i=1}^K \theta_i - 1 \right)$
 
 ------------------------------------------------------------------------------------------
 
