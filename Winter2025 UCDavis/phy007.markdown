@@ -1,0 +1,326 @@
+## Phy 007 ##
+
+- [lecture 1](#lecture1)
+  - [hydrostatic system](#hydrostatic-system)
+  - [hydrodynamic system](#what-if-the-fluid-is-flowing)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## Lecture1 ##
+
+we look into the hydrostatic system and go over differnt principle that applies to them
+
+- passal principle
+  - hydrostatic benoulli euqation
+  - gravitational potential energy density
+  
+experiment1 : display of hydrostatic system
+- that have different shapes and volume of container
+- we give same amount of water in there, we see what would be the overall static system be, as different water level
+
+experiment2 : display of passal's principle
+- i don't see it clearly, btw he go over principle of passal's principle
+- how the air pressure play around with different system
+
+### hydrostatic system ###
+
+- hydrostatic system
+  - *where the fluids meet they have the same pressure*    
+
+**Passal's principle**
+
+- whenever pressure applied to a static, confined fluid is distributed throughout the fluid and its container walls undiminished
+
+- system 1
+  - for a container, this would apply to its open top
+  - Ptop = `Patm = 1atm = 101325Pa`
+  - SI unit for Pascal: `1 Pascal = N/m^2 = 1/m^2 (N = kg * m/s^2)`
+  - this explained how pressure existed on the static, confined fluid
+
+- system 2: piston on system1
+  - there is a piston(活塞) pressing down the fluid with force F
+  - now the Papplied = F/A A = area
+  - this explain how Pascal principle talks about undiminished pressure
+
+- look back system 1
+  - for two spot in the cylinder container ; p2 and p1 ; p1 is higher than p2
+  - the lower spot would have higher pressure
+  - p2 = p1 + pressure applied by fluid between there points
+  - p2 = p1 + mg/ A(area of container)
+
+```
+p2 = p1 + mgh/Ah(Volume, V)
+m/Ah = m/V = σ(mass density of fluid)
+unit of [σ] = kg/m^3  
+p2 = p1 + σhg
+p2 = p1 + σg(y1 - y2) : height = y1 - y2
+p2 - p1 + σg(y1 - y2) = 0
+```
+- **Hydrostatic Bernulli Equation**
+  - `△p + σg △y = 0`
+  - gravitational potential energy density = σgy 
+  - we could now understand pressure is a sort of energy
+  - [P] = pascal/Pa = N/m^2 = Nm/m^3 = J/m^3 = energy/volume
+
+- now image another system, further application on question solving
+  - in a open lid cylinder container
+  - there is oil stay on top of the water
+  - water is in the bottom
+  - give initial condition
+    -  P oil = 800 kg/m^3
+    -  hw = 0.4m
+    -  P bottom is 150kPa
+  -  how we find the H oil?
+  
+- we apply the hydrostatic bernulli equation first
+  - `△p + σg △y = 0`
+  - solving process
+
+```
+Po : Po - P bottom + σg(y0 - ybottom)[height difference] = 0
+P0 = P bottom - σ(w)ghw
+P_atm - P_oil + σ_oil * g *(y_top - y_bottom)[height_difference] = 0
+``` 
+
+### what if the fluid is flowing ###
+
+- system1
+  - imagine a long pipe; there is water flowing in there
+  - `Bernoulli Equation` explain this; previous one is hydrostatic bernoulli equation
+  -  △p + σg △y + △KE/Vol [since this system is open] = 0 [no dissipation or sources]
+  -  conduction below represent conservation of energy density at two locations in a flowing system
+
+```
+kinetic energy density = 1/2 p v^2
+△p + σg △y + 1/2 * p * △v^2 = 0
+△v^2 = v2^2 - v1^2 (keep in mind that this is not equal to (v2-v1)^2 )
+```
+
+- introduce concept of flow rate I 
+   - this is amount of fluid volume passing through a point in the system per unit time
+   - I = volume through cross-sectional area/time interval
+   - [I] = m^3/s
+   - `I = △V/△t` or it's `I = dV/dt`
+   - now we specify the volume
+   - `I = A(cross section) dx(x = length of cross section) /dt = A 
+   - `I = Av`
+- we'll assume fluids are incompressible --> fluid ; volume remains constant
+- this is just easier assumption for our course
+
+- `continuity equation`
+  - current is constant throughout the system
+  - if we compare two locaitons for different flow rate
+  - imagine a wine bottle which I1 have larger volme I2 at nearly end of the wine bottle
+  - conduction below --> `speed only change if the area of the pipe changes`
+
+```
+stated by continuity equation: I1 = I2
+we would have   A1v1 = A2v2 , since I = Av
+△p + σg △y + 1/2 * p * △v^2 = 0
+g is only nonzero if △y != 0
+```
+
+Extended/Complete Bernoulli equations:
+△p + σg △y + 1/2 * p * △v^2 = -I(disspation)R(existance of pipe[termal energy change]) + E_pump/V
+△(Eth/V) = IR
+R = resistance between whatever point you're considering
+[R] = Js/m^6
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## DL1 ##
+
+TA information   
+name:  antyom   
+email: alistisyn@ucdavis.edu  
+room: 2314    
+OH: monday 5:00 - 6:30    
+
+```
+ΔE_tot / vol   = W   
+ΔPE_grav/ vol  = p * g Δy
+ΔKE/vol        = 1/2 p Δ(v^2)
+ΔE_thermal/vol = I(water flow)R(resistance of pipe[something inside the pipe])
+ΔP(pressure)   = he said this is considered lastly 
+```
+
+- energy density equation
+  - ΔKE/vol + ΔPE_grav/vol + ΔP = E_pvmp/vol - ΔEth/vol
+
+- continuity equation
+  - I1 = I2
+  - the water comes in == water comes out 
+  - reminder: I = water flow
+  - variable contribute to I
+    - speed of water
+    - container size
+
+- scenario
+  - when container size is larger, speed remain constant, the I become larger
+
+- more about continuity equation
+  - since I1 = I2
+  - if one side of the pipe have larger Volume, it's gonna have smaller speed
+  - for another side of the pipe that have smaller volume, it's gonna have large speed to maintain I1 = I2 
+
+- change in resistance would not decrease the water velocity
+  - since v = I/A
+  - btw change in area would effect the velocity
+
+- a way to think about pressure
+  - ΔP means pascal
+  - pressure is force
+  - force = F/A = [J/m] / [m^3] = [ J/m^3 ]
+  - F = W(word/d(distance)
+  - force is sort of stored energy
+
+- guage pressure
+  - some pressure don't include the atomsphere pressure
+  - something don't compare to atomsphere pressure
+  - ppl use this for tire pressure (like 40psi)
+  - this is the pressure difference
+  - Pbottom - Ptop = pgΔy
+  - this is ΔPressure
+
+- absolute pressure
+  - guage pressure + Patm
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## DL2 ##
+
+website with question for practice: https://alisitsyn.com/research/
+
+- equation that explain why lower pipe would have higher pressure
+  - $∆P + \frac{1}{2}∆(v^{2}) + \rho g∆h = 0$
+  
+- with given a system with different pressure and height 
+  - we try to figure out what's the different between height of different pipe
+  - given out new conditions 
+  - $∆P1 + \rho g∆h1 = 0$
+  - $∆P2 + \rho g∆h2 = 0$
+  - we also have initial condition of h1 bottom and h2 bottom
+  - btw we don't know how's the relatioship between h1 top and h2 top
+    - h1 top = h1 bottom + ∆h1
+    - h2 top = h2 bottom + ∆h2
+  - using this to rewrie the original equation
+    - $(P2 - P1) + \frac{1}{2}∆(v^{2}) + \rho g(h2 bottom - h1 bottom) = 0$
+    - $(Patm - P1) + \rho g∆h1 = 0$
+    - $(Patm - P2) + \rho g∆h2 = 0$
+  - using rewrite quation to get P1 and P2
+    - $P1 = Patm + \rho g∆h1$
+    - $P2 = Patm + \rho g∆h2$
+  - looks back original question
+    - h2 top - h1 top = h2 bottom - h1 bottom + ∆h2 - ∆h1
+  - look into ∆h2 - ∆h1 by rewrite previous equations
+    - $∆h1 = \frac{P1 - Patm}{\rho g}$
+    - $∆h2 = \frac{P2 - Patm}{\rho g}$
+  - plug values backward
+    - $∆h2 - ∆h1 = \frac{P2 bottom - P1 bottom}{\rho g}$
+  - how we know which Pressure is larger ; we could look at this
+    - $∆P + \frac{1}{2}∆(v^{2}) + \rho g∆h = 0$
+    - $∆P = -\frac{1}{2}∆(v^{2}) - \rho g∆h$
+    - $\frac{ - \frac{1}{2} \rho ∆( v^{2} ) - \rho g∆h }{\rho g}$
+  - as h2 bottom - h1 bottom is negative, we could remove $- \rho g∆h$ here
+    - $\frac{ - \frac{1}{2} \rho ∆( v^{2} )}{\rho g}$
+  - and we know ∆v is become slower as area in bottom is larger
+  - whole solution is negative 
+  - there is another negative sign before
+  - we got there
+  
+### how we calcualte units ###
+
+1 atm = $2\times10^{5} Pa$ = $\frac{N}{m^{2}}$ = $\frac{kg \frac{m}{s^{s} } }{m^{2} }$ = $kg \frac{1}{s^{2}m  }$
+
+### FNTs from Dl1 ###
+
+- q2: try to understand difference between gaurage pressure and absolute pressure
+  - kinda remember the atomsphere pressure
+  - absolute pressure = relative pressure + 1atm 
+ 
+- q3: try to remember that there is more pressure in the right handside ; that lower gravitational there ; higher pressure
+  - also try to image there is more pressure, so this is pressing liquid downward 
+
+- q4: compare different spots for pressure comparison
+  - we shall determine whethere these spots are in the same system or not
+  - answer: we figured that they are in the same system; and same height
+  - they would share the same pressure as long as they are in the same system
+  - we could verifiy this further with the `bernoulli equation`
+    -  $∆P = P + \rho gh$
+  - also remember the reason why we can apply `bernoulli equation` there bc this system is equal
+
+- q5: we shall pick some nice relative standard
+  - so that we can aplly bernoulli equation to them to compare their pressure
+  - in this question,   P2 < P3 < P1 
+  - since p2 have 
+  - reason of pressure in air doesn't matter
+    - since density of air is too slightly
+    - for change in $\rho gh$ 
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## lecture 2 ##
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## DL3 ##
+
+OH next Tuesday: 5:00pm - 6:30 pm  better come that time
+
+- resistance per unit length
+  - $IR = \frac{∆Eth}{vol}$
+  - R: resistance
+  - L: length pipe section
+  - R* : resistance per unit length
+
+- homemade experiment 
+  - calculate the R* out
+  - formula $∆P = -IR$
+  - $\rho g∆y = - Av(R*)L$
+  - $R* = \frac{\rho g∆y}{AvL}$
+  - as long as we measure out the values; we plug in
+  - for the unit, 
+
+- **FNT2**
+  
+- Q2:
+  - since they share the same initial pressure, the pressure would be the same overall
+  - even double in lenght, rise the resistance up 
+  - there would result in lower velocity throughout the time
+  - not change in pressure    
+
+- Q1:
+  - the pressure is also the same overall system
+  - system A and C have the same final change in height
+  - thus, I would result highest in B
+  - Ia = Ic < Ib
+
+- **DL3**
+  - compare electric circuts to water system
+
+| water      | electric circuts
+|:----------:|:----------------
+| pump       | battery
+| voltage    | pressure
+| current    | flow (frictionless)
+| wire       | pipe
+| resistor   | pipe with friction 
+| electron   | water
+| lightbulb  | waterwheel
+
+
+| terms       | value
+|:-----------:|:-----------
+|$∆Vbattery$  | e
+|$∆Vresistor$ | -IR
+|$∆Vloop      | 0 ; this means voltage at the loop_start is the same loop_end
+|$-IR + e = 0$
+|$\sum Iin = \sum Iout$ ; $\sum I = 0$
+
+- current  goes from positive to negative
+ 
+- electron goes from negative to positive
+  - opposite electron are attract to each other 

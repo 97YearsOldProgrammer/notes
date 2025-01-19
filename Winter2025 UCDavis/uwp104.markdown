@@ -1,0 +1,186 @@
+## lecture 1 ##
+
+he goes over all details about overall course design
+
+--------------------------------------------------------------
+
+## lecture 2 ##
+
+he talks about more detail for literature review
+steps for making such good literature review
+
+- pick readings that we are gonna include
+  -  we could focus on abstract summary of reading
+  -  he said we don't wanna read everything in there
+   
+- introduction
+  - minilif review
+  - evalute a synthesis peak IMRADS through praise and critcize
+  - read IMRADS to build literature review 
+
+- methods
+  - receipe
+  - methods, material, protocol
+
+- results
+  - everything they focus
+  - their object 
+  
+- abstract?
+  - summary
+  - introduction
+  - something etc
+
+- discussion
+  - inerprett ; self-evalute ther finding
+    - either praise or criticism
+    - future research examine
+
+he said the IMRAD is more than summary of multiple paper, but more about it, make either praise or criticism
+
+### literature review 1 ###
+
+- there are many kinds of literature reviews
+  - we are gonna focus on a particular kind of literature review
+  - we are gonna write a traditional literature review
+
+- there are even literature review contain 0 studies
+  - don't pick other literature reivew to build our literature review 
+
+- critical connection
+  - science is a trajectory of research
+  - be critical to certain literature review is not being critical merely on it
+  - btw connect to another research 
+
+- we are working on a smaller scope of the science
+- we are not gonna writing a research paper on this assignment
+  - since research paper is not critical
+  - we are gonna evalute those studies and be critical thinking on them
+
+- IMRADS also called the method paper
+
+### literature review 2 ###
+
+- we are gonna pick article within the last five years
+  
+- remember not all topics work 
+  - if this topic is not able to find topics on it
+  - we should use other topic out there
+  
+- find more paper than the required paper
+  - if some IMRADs are longer than what our required; we shall also keep it
+
+- look top right of the paper
+  - make sure that this is not the literature review
+  - if that is a review; don't pick it
+  - avoid using scholarly articles that are not original research
+
+- strategy
+  - we could read the literature review, see whether there are appropriate IMRADs
+  - finding articile that could be useful on this project
+
+
+### prompt about this ###
+
+- we are not writing for generalist, btw image on of our professor in major
+  
+- summary or hovering
+  - don't do that; make more than this
+  
+- policy assetion or cost
+  - this is not the place of taking what we shall doing
+  - make clear for other specialist what we have already done
+  - be stick to the science
+
+- don't do would, could, should, might, must, can, needs
+  - write based on current study
+  - don't shame on them
+
+- make fair criticism
+  - imagine further meet the author
+  - don't criticism based on purpose or etc    
+
+--------------------------------------------------------------
+
+## lecture 3 ##
+
+he break down the lit review into three sections
+
+- title
+  - introduction
+  - hook
+    - obstacle to current research ; be clear as possible  
+  - background
+    - old study for context ; not included in 4 - 6 original paper 
+    - background for specialists whoever not familiar with current topics
+    - 1-2 sentences
+  - roadmap 
+    - talked about all the studies that how they tie together
+    - goes 4-6 articles, not title, make author name at all, not everybody in the paper
+    - how story are connected in a paragraph
+    - solid paragraph
+    - also name the theme there
+
+- discussion
+  - with different themes with same format 
+  - one paragraph <-- mini-intro
+    - list the articles of this theme
+    - listng here is okay
+    - another introduction out there
+    - it should aligned up with the previous roadmap ; he said this is way to anticipate picky reader out there
+  - two body paragraph between them
+    - how two articles are conected
+    - synthesizing at least two articiles
+    - try to show how one article connect to another article
+    - technique for lit review
+    - topic sentence --> name 2 research teams + puts together
+    - example: criticise one --> move to another one for make progress them
+    - don't do summary 
+    - different body paragraph could do overlap 
+    -   
+  - one paragraph <-- mini-outro 
+    - connect to conclusion
+    - accessing what we know from this theme
+  - between different themes should be linkd
+    - ideally they shall connected with each other
+    - intro of paragraph theme2 should connect to mini-outro of previous theme   
+
+- conclusion
+  - conclusion for previous mini-outro paragraphs
+
+### how to synthesize IMRADs ###
+
+- read abstracts to pick articles
+  - btw never cite those abstracts
+
+- he suggested to chart different articles
+  - so it's easier for ppl to understand everything
+  - help for personal understanding
+
+--------------------------------------------------------------------------------------
+
+## lecture 4 ##
+
+- don't put time on telling the reader that is articles are similar 
+  - similarity are the starting points
+  - try to make argument instead of listing the similarity
+
+- sometimes data publication works ; btw not necessary
+  - think about some articles further than something
+
+- **meaningful difference**
+  - make synthesis cycle ; similarity --> differece --> evaluaiton
+
+- btw he also said similarity is required for connecting two aritcile into same background
+  - group paper together and then seperate each one
+  - evaluation step: similarities > difference > evaluation
+
+- he said evalution means one thing is better than another thing
+  - consider what comes next ; the trajectory of science
+  - make words as better
+  - most evaluation comes out the IMRADs
+  - also okay to criticise
+
+- don't write more about the articles u like
+  - btw also articles ain't that good
+  - reverse engineer  

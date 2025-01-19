@@ -1,0 +1,185 @@
+## ENG 006 ##
+- week1
+  - [matlab_command](#matlab-comand)
+  - [basic_computer_compoennt](#computer-compoenent)
+  - [numerical_representation](#numerical)
+  
+------------------------------------------------------------------------------------------------
+
+### MATLAB comand ###
+
+| Command | Content                                     |
+|:-------:|:-------------------------------------------:|
+| clc     | clear in python                             |  
+| clear   | clear in python, btw delete every varaibles |
+| diary   | edit something?  diary off means exit       | 
+| exit    | logout MATLAB                               | 
+| who     | show all variables in current workspace     | 
+| whos    | show all varaibles with more information    |
+
+format command
+- format long / short
+- format compact / loose
+
+matlab also support print multiple statements in the same line   
+just seperate them by the 
+
+- ; (semicolon)
+  - this would also not print out that command line
+- , (comma)
+  - this would print out that command line
+
+### computer compoenent ###
+
+| Component | Function                                                     |
+|:---------:|:------------------------------------------------------------:|
+| switch    | first form of stuff that make electric represent 0 or 1      |
+| processors| some stuff to do the calculation                             | 
+| memory    | where different 0 or 1 being stored at                       | 
+| program   | yeah, just stuff sequence of instruction to computer         |
+| complier  | translate high-level language programs into machine language | 
+
+### numerical ###
+
+for integer
+
+- different integer
+  - 8-bit ; up to 255
+  - 16-bit ; up to 65535
+  - 32-bit ; up to 4294967295
+  - 64-bit ; huge number
+
+- signed or unsigned
+  - signed 8-bit   : -128 to 127 (half negative and half positive)
+  - unsigned 8-bit : 0 to 255
+
+for floats
+
+- **decimal normalized scientific notation**   
+  - x*10^x   
+  - one digit before decimal number all the time
+- **binary normalized scientific notation**
+  - x*2^x
+  - share the same rule as above
+
+matlab use the `IEEE754 standard` for floating-point representation
+
+for complex number
+
+- either i or j represent single complex number in matlab
+
+### regular constant ###
+
+| notation | meaning |
+|:--------:|:---------
+| pi       | 3.1415
+| NaN      | sort of not-a-number notation; like evaluation for values that don't have a good math number
+| Inf      | infinite number
+| realmin  | smallest floating-point number
+| real,ax  | largest floating-point number
+
+
+### notation operation ###
+
+someunusual circumstances
+- -4 ^ 2 = -16
+  - since computer do the x^2 first, and then apply the negative value
+  - just have in mind about different priority of notation calculation
+
+----------------------------------------------------------------------------------------------------------
+
+### boolean in matlab ###
+
+it's called logical operator there, 1 is true, 0 is false ; assigning them in matlab is varaiblename = 0 or variablename = 1
+
+| logical operator | meaning |
+|:----------------:|:---------
+| basic logical operator
+| x & y            | this is x and y in python
+| x | y            | this is x or y in python
+| ~x               | this is not(x) in python
+| (none)           | as long as there is one true, it's true, false when both are true
+| short circut logical operators
+| x && y           | whenever x is true, y is checked ; whenever x is false, y  is not checked
+| x || y           | whenever x is true, y is not check ; whenever x is false, y is checked
+
+### priority of logical operation check ###
+
+( ) > ^ > negation > + / + - math operation > relational operator > & > | > && > ||
+
+### other operator in matlab ###
+
+| operator | description |
+|:--------:|:------------
+| logical operator
+| x == y   | x equals y  
+| x ~= y   | x does not equal y
+| realational operator
+| a < b    | 
+| a > b    |
+| a <= b   |
+| a >= b   |
+
+- some exception in matlab
+- for example 0 < something < 9
+  - matlab would operate lefthand side first
+  - and either something is inside or outside this range
+  - it would return either true == 1 ; or false == 0
+  - so this gonna compare the righthand side to 100% return a True
+
+### matlab script ###
+
+it's something different than python library, it have sort of way u have to store it in some format and call them up later on whenever we wanna use that    
+the script can be either stored by .m or .mlx   
+
+### matlab comment ###
+
+it's using the % percentage notation for writing a comment than # in  python 
+| comment way | how we do that 
+|:-----------:|:---------------
+| % something | this is the single line comment
+|%{something}%| this is multiple line comment 
+
+### matlab function ###
+
+```
+function something we want to operate or input out there
+
+lines we want everything to operate
+etc
+
+end
+```
+that's how everything works out
+
+they also call something `local function` --> this means function whoever locate at the end of a script and appearantly not a sharable function
+
+### output matlab function ###
+
+- disp(variable name)
+  - works like print function in python
+  - similar 
+  - btw for the string u need to make it out before using disp
+  - u cannot do what ever like print function in python : modified the string inside the print 
+
+- fprintf(something)
+  - it's like print function in python
+  - it's gonna able to print something out with modified string in it
+  - it also require like C language stuff for a variable name placeholder
+  - %f for a decimal variable 
+
+| Operator | Prints      | Description                     |
+|----------|-------------|---------------------------------|
+| `%f`     | fixed-point | Used for floating-point numbers |
+| `%d`     | integer     | Prints integers                |
+| `%i`     | integer     | Same as `%d`                   |
+| `%c`     | character   | Prints a single character      |
+| `%s`     | string      | Prints a string                |
+
+| Special Character |Description                                                                 
+|-------------------|----------------------------------------------------------------------------
+| `\n`              | Prints a new line.                                                         
+| `''`              | Prints a single quotation mark.                                            
+| `%%`              | Prints a single percent sign (`%`).                                        
+| `\\`              | Prints a single backslash (`\`).                                           
+| `\t`              | Prints a tab.                                                              

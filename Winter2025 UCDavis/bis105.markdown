@@ -1,0 +1,520 @@
+# BIS105 #
+
+- [lecture1](#lecture-1)
+- [lecture2](#lecture-2)
+- [lecture3](#lecture-3)
+- [lecture4](#lecture-4)
+- [lecture5](#lecture-5)
+- [lecture6](#lecture-6)
+
+## lecture 1 ##
+
+### course material ###
+
+this course is basically bis102 + bis103
+
+*for BIS102*
+
+- amino acids
+- oligopeptides
+- proteins
+- lipids
+- membranes
+
+*for BIS105*
+
+- portions of metabolism
+  - glycolysis
+  - Krebs cycle
+  - ETC
+  - ATP synthase
+  - photosynthesis
+
+### course themes ###
+
+- 1 importance of weak bonds
+  - hydrogen bonds
+  - ionic bond
+  - Van der waals
+  - hydrophobic effect
+
+- ideas of entropy in biochemistry ( basically chemistry in biology )
+  - Delta G = delta H - T * delta S
+  - G : total energy to do work
+  - H : enthalpy (heat)
+  - T : temperature
+  - cells as chemical engines
+
+he said we just kinda remember the ideas of this equation; either from heat or temperature
+recap: negative of gibbs energy means spontaneous
+
+
+### animal cell example ###
+
+he give us a animal cell picture
+he mentioned think of this animal cell from a `dynamic` perspective
+
+- components of cells
+  - 70% H2O
+  - 15% Proteins
+  - 1% DNA 6% RNA as nucleic acids
+  - 3% glucose, glycogen as carbohydrates
+  - 2% lipid ; either for hormones or as fatty acids
+  - 1% other small organic molecules as `NAD+` (nicotinamide adenine dinucleotide) 2e- carrier
+     - example: `FMN` (flavin mononucleotide) 
+     - `FMN` as 1e- carrier : chemically, this is **free-radical**
+     - resonance structure of FMN make this become a free-radical
+  - inorganic ions ; Zn+2, Mg+2, Fe3+, HPO4-2, Cl-, etc
+
+- main atoms
+  - carbon, hydrogen, oxygen, nitrogen, phosphur, sulfur
+
+### biological conclusion ###
+
+- everything is important in a cell
+- biomolecules have evolved to function in an aqueous environment
+  - he want to say that keep in mind that every biological stuff is surrounder by water
+  - and life is dynamic
+
+### Amino acid ###
+
+aa is the building block of proteins
+
+- peptide
+  - N-terminus
+  - a string of amino acids residue 
+  - connect by the peptide bond
+  - C-terminus
+
+also remember everything is surrounded by water H2O
+this gonna folded as long as made, since it's surrounded by water
+inside the peptide is `non-polar` interior, outside is polar
+
+----------------------------------------------------------------------------------------
+
+## lecture 2 ##
+
+he start with introducing how different amino acid chemically worked
+
+| group     | name          | notation | resonance/special |
+|:---------:|:-------------:|:--------:|:------------------
+| R-groups  | 
+|           | asparagine    | N        | cannot form NH3+ there
+|           | glutamine     | Q        | good at forming hydrogen bonds ; pKA 
+|           | serine        | S        |
+|           | threonine     | T        |
+|           | glycine       | G        | tiny
+|acidic     | aspartic acid | D        |
+|ionizable  | glutamic acid | E        |
+| basic     | lysine        | K        |
+|           | arginine      | R        | guanidino
+|           | histidine     | H        | imidazole
+|           | tyrosine      | Y        | can absorb UV light middle
+|           | cysteine      | C        | side chain can react with O2 --> covalent bond with with another cysteine (disulfide bond) 
+|hydrophobic| leucine       | L        |
+|           | isoleucine    | I        |
+|           | valine        | V        |
+|           | alanine       | A        |
+|           | methionine    | M        |
+|           | proline       | P        |
+|           | phenylalanine | F        | can absorb UV light worst
+|           | trytophan     | W        | have indole ring in it ; can absorb UV light best
+
+[link for different structure of amino acids](https://files.mtstatic.com/site_4334/125069/0?Expires=1737166071&Signature=ZdaFj-e6O9BtglP5dVZjiHASyrfLnjd6MAElXCsnuud-AjbhV07cVGh-BTUqXLy8QYDvDv5NFIFTaqChOoCm~fj8lz8IRuw~T32gzVu5mjFvoT1eCqj6e11kZLqwC38ub8apYYFoJBuWPpVEAmr23woFGXvR1JT77gWn477BcDI_&Key-Pair-Id=APKAJ5Y6AV4GI7A555NA)
+
+- indicator of how well they can absorb UV light
+  - W > Y > F
+  
+- importance of cysteine sulfer bond
+  - SH group better be maintained 
+  - otherwise, it would form the disulfide bond with another cysteine with interaction with oxygen
+  - btw disulfide bond make proein more stable
+- laboratory solution to this
+  - we pour excess `mercaptoethanol: HSCH2 - CH2OH` in there
+  - would go the disulfide exchange reaction
+
+----------------------------------------------------------------------------------------
+
+## lecture 3 ##
+
+- in vivo    
+  - it's largely composed by different layer of membrane   
+  - oxygen are able to cross anywhere those membrane
+  - inside mitochondrion, there is Electron transport chain there, ultilze the oxygen
+    - complex 4 of ETC requires oxygen --> water ; as electron acceptor
+  - oxygen is always oxidizing everything with this mechanis
+
+- cells use `glutathione( y-E-C-G[glycine] ), NADPH and enzyme` to keep SH groups reduced
+  - glutathione used to keep SH groups reduced
+  - NADPH is the reducing agent ; it would reduced oxidized glutathione 
+  - enzyme is speeding up the NADPH ; some energy is ultilze to replenish NADPH
+
+### weak acids/bases (part1) ###
+
+**importance of pH**   
+
+cells use buffers <-- mixation of weak acids and weak bases   
+pH of buffers are used to maintain their proper function   
+whenever we wanna study cells, we need buffer to maintain buffer for cells    
+monoprotic weak acids ; polyprotic weak acids   
+
+- pH
+  - pH = - log aH+
+  - aH+ is the acitivty of H+ (effective concentration)
+  - a = γc <-- M, the amount you weighted out in a certain volume
+    - 0 < y <= 1 
+    - γ = activity coefficient 
+    - he said it's not always that ideal situation to make buffer  
+
+- sodium chloride to γ
+  - sodium make -1 in γ (charge)
+  - choride make +1 in γ (cahrge)
+  - change in γ is not always linear relationship with concentration change
+  - since there is charging for shielding 
+
+- weak acid
+  - HA -> H+ + γA-
+  - HA <------- H+ + γA-
+  - weak acid is poor on donating proton
+  - activity coefficient is complicated
+  - btw we need this to do precise calculation 
+  
+- for dilute buffer
+  - we use the quadratic equation directl to calculation
+  
+- for non-dilute buffer
+  - we should not use the quadratic equation
+  - it's not exit in our course  
+
+- at buffer concentrations of 0.1M or higher, y's < 1 
+  - pH = - log[H+] 
+  
+- strong acid
+  - something completely dissociated when add to water
+  - do not included by `henderson-hasselbalch equation`
+  - example of strong acid
+    - HCl (chloride ion usually don't screw up biological process)  <-- never should be in a buffer
+      - `anything other than quiz than HCl, is weak acid`
+      - in our course, we care about most
+    - HNO3 (nitric acid) <-- good at 90% organic material
+    - H2SO4 (sulfric acid) <-- form a precipitate
+
+- strong base
+  - NaOH (sodium hydroxide)
+  - KOH (potassium hydroxide) 
+  - never belong to the `henderson-hasselbalch equation`
+  - `any base that are not OH- must be weak`
+  - whenever we mix with some strong and weak, the strong gonna win
+
+```
+weak acid environment
+
+example1
+
+HA + H2O -> H3O+ + A- ; HA + H2O <------ H3O+ + A-
+  
+example2
+
+HA -> H+ + A- ; HA <-------- H+ + A-
+y-x          x    x
+Ka = [H+][A-] / [HA]
+Ka = x^2/(y-x)
+x  = [H+]
+pH = -log[H+]
+```
+
+- *derived of Henderson-Hasselbalch equation*
+  - log[Ka] = log[H+]+ { log[A-] / [HA] }
+  - -log[H+] = - log Ka + log{[b]/[a]}
+  - pH = pKa + log{[b]/[a]}
+  - in both top and bottom of the titration curve ; we cannot use this equation
+    - since at top and bottom, either acid would be 0 or base = 0 
+    - the equation is not gonna make sence out there
+  - in the middle of titration curve
+    - [b] = [a]
+    - pH = pKa
+  - a good buffer is when the pH is within +/- 1 ph unit from pKa   
+
+
+we shall learn how to do this ; like how to calculate this    
+also learn when should we use those equations     
+
+```
+weak base environment
+
+A- + H2O -> HA + OH ; A- + H2O <------- HA + OH
+A- -> HA + OH ; A- <------- HA + OH
+y-x   x    x
+
+Kb = [HA][OH-]/[A-]
+Kb = x^2/(y-x) <-- x is almost 0 compare to y
+[Ka][Kb] = 1x10^-14
+x  = [OH-]
+```
+
+------------------------------------------------------------------------------------------------
+
+## lecture 4 ##
+
+### sample question from previous class ###
+
+- given 100ml of 50mM acetate buffer ; pH 5 , using 1.00M CH3COOH, 1.00M NaOH / or 1.00M HCl
+  - (0.100l)(0.050M acetate) = 0.0050mol CH3COOH/CH3COO-
+  - 0.0050 mol acetate = (x l)(1.00M)CH3COOH
+  - x = 0.005 liter = 5ml
+
+- what's %b at pH5?
+  - pH   = pKa + $log\frac{b}{a}$
+  - 5    = 4.76 + log$\frac{b}{a}$
+  - 0.24 = log$\frac{b}{a}$
+  - b = 0.635
+  
+- 0.635 *(0.0050 mol CH3COOH) = 0.003175mol OH- required
+  - 0.003175 mol OH- = (x l)(1.00M NaOH)
+  - x = 0.003175l = 3.17ml
+  
+- final conclusion
+  - 5ml 1.00M CH3COOH + 3.17ml 1.00M NaOH + water to 100 ml
+  - net charge = (0.635)(-1) + (0.365)(0) = -0.635
+
+### more about buffers ###
+
+- characteristics of a good buffer
+  - high molarity 
+    - for example, reservoir of aicd
+    - HA  --> H+ + A- (reservoir of base)
+  - Do not interfere with biological process 
+    - no activation or inibition of the biological process
+    - no interference with chemical assays or columns 
+
+### polyprotic weak acids ###
+
+- phosphate buffers
+  - we don't use a lot of phosphate in bio labs
+  - it not obey don't interfere rule
+    - since in biology, there are lots of phosphate
+    - enzyme gonna have them as binding site etc
+
+| chemical | pka
+|:--------:|:------------------
+| H3PO4    | 2.12  --> to H2PO4
+| H2PO4    | 7.21  --> to HPO4  ; 1st intermediate ion
+| HPO4     | 12.32 --> to PO4   ; 2nd intermediate ion
+| PO4      | none
+
+this is weak acid, since for our purpose of class, any acid except HCl is strong acids   
+based on the Henderson-Hasselbalch equation , whenever pH reach to pKa, it's already half way of deriving first proton    
+
+- takeaway for titration curve
+  - he said whenever half way of pH = pKa, solution no longer able to easier go left handside or right handside 
+  - btw it's different whenever it's half way to reach the pH = pKa
+    - how we determine this pH value
+    - pH a this level = $\frac{(pKa+pKa2)}{2}$
+    - basically to average those pKa ; get the proper pH value 
+  
+- more about Henderson-Hasselbalch equation
+  - it says for it become a base form, it require at least 2 units for pH larger than pKa
+    - we need 2 units larger to it become the base form
+  - if we wanna figure out what's the amount to turn the polyprotic weak acids backward to acid form from base from 
+    - it requires amount of strong acid
+    - through calculation of until solution pH become = $\frac{(pKa+pKa2)}{2}$
+
+------------------------------------------------------------------------------------------------
+
+## lecture 5 ##
+
+### different weak bonds ###
+
+- **van der Waals**
+  - doesn't matter with pH value; matter with distance
+  - exits whenever get touch
+  - require two molecules to touch with each other
+  - one have higher electronegativity and one don't
+
+- **ionic bond**
+  - don't require direct touch between molecules
+  - require such salt bridges form wth + and - sign
+  - Coulomb's law take charge of it
+    - $$F = \frac{q_1 q_2}{\varepsilon r^2}$$
+    - $\varepsilon$ is dielectric constant here
+    - different checmial stuff have different dielectric constant
+  
+| different matter | dielectric sontant  
+|:----------------:|:-------------------
+| vacuum           | 1
+| benzene          | 2.3
+| water            | 80
+
+- reason why water is high
+  - bc water is good at dissolving things with charges on it
+  - like aa, phosphate, protein
+
+- sign of q1 or q2 would sometimes depend on the pH value
+
+- **hydrogen bonds**
+  - hydrogen bond require some donors there
+    - the intermolecular bond
+    - like R-OH   ; O high EN ; H low EN
+    - like O=C-2R ; acceptor 
+    - 90% ionic ; 10% covalent O > N > 5
+    - each water can be connected four hydrogen bond; oxygen can be two hydrogen bond donor site, two H can be acceptor site
+  - distance matters with strenght of hydrogen bond
+  
+- **hydrophobic effect**
+  - he said what there is flickering clusters
+  - hydrogen bond form and disapear dynamically
+  - he said another way for form ice for illustrate the hydrophobic effect
+    - CH3CH2CH2CH2CH3
+    - multiple water conjugated near this organic molecule
+    - multiple CH3CH2CH2CH2CH3 gonna form together bc surrounded by water
+    - not bc hydrophobic molecule love each other
+
+- how chemically hydrophobic effect is happening 
+  - $ΔG = ΔH - TΔS$ 
+  - ΔG become negative
+  - ΔS become negative with addition of hydrophobes ; btw water make more hydrophobic effect which increase the disorder
+    - in total  $TΔS$ become negative
+    - $ΔH - TΔS$ the whoele thing become negative
+  
+hydrophobic effect is the driving force in forming the three dimensional shapes of proteins, DNA, membranes
+
+- look into `dsDNA`
+  - ds DNA in shape of double-helix shape  
+  - GC have three hydrogen bond
+  - TA have two hydrogen bond
+  
+- the reason why `ssDNa` don't exits
+  - bc inside the water system
+  - ssDNA with G and ssDNA with C is hard to stay inside the water situtation
+  - the hydrophobic effect stablize the shape of dsDNa ; double helix shape
+  - 40% H-bonds 60% hydrophobic effect make shape of double helix
+
+- he talks about how the dsDNA become destabilize bc presence of salt; not sure what he mean there
+  - shall look back there 
+
+- van der Waals don't matters lot there 
+
+------------------------------------------------------------------------------------------------
+
+## lecture 6 ##
+
+### oligopeptides ###
+
+- oligo == 'a few'
+  - usually lower than 10 resideus
+  - oligopeptides, oligosaccharide, oligonucleotide 
+
+- naming rule
+  - A-H-P ; alanylhistidylproline
+
+- example A-H-P
+  - proline have 3.6 pH at it's C terminus
+    - if we add hydrogen to the COO- side
+    - we would result decrease of pH 
+  - alanyl at N terminus have 7.4 pH 
+    - C near the alanyl make stabilization
+    - if we add electron to remove the + charge on it
+    - we would result increase of pH 
+  - histidyl in the middle have 6.0 pH
+  -  he said look at different Carbon, nitrogen structure
+
+- with conduction above, we could tell AHP gonna be 6< pH <7.4
+  - at pH 8.0; net charge question
+
+- if this is two units away
+  - if this is two units lower, we are gonna make it negative charge, donate proton
+  - if this is two units higher, we are gonna make it positive carge, receive proton
+- elif this is include in two units, we are gonna use to use `Henderson-Hasselbalch equation`
+- elif this is close two two units, we are gonna to make charge = 0
+
+### another oligopeptides example ###
+
+- this is famouns in biological cell
+  - $\gamma-E-C-L$
+  - $\gamma-E$ this is made by enzyme, since ribosome enzyme could not make mRNA out into protein through this
+  - cystine 
+  - lycine
+  - $\gamma-glutamylcystylglycine$
+  - $glutathione$
+  - what he said previously that important for prevent the disulfur bond 
+  
+- on the cystine area, there is a SH bond
+  - that later used by glutathione for making disulfer bond so that they would not connect with others 
+
+example2
+
+- aspartic acid
+  - D 
+- phenylalanine
+  - F
+- methylester
+  - it's a methyl group connect to the C terminus, that blocks it, make ester 
+
+- named
+  - D-F-methylester
+  - aspartylphenylalanylmethylester
+  - [aspartame](https://en.wikipedia.org/wiki/aspartame?variant=zh-cn) 阿斯巴甜 = nutrasweet
+  
+- property
+  - human made molecules
+  - it blocks the C terminus 
+  
+example3
+
+this example have multiple trans-cis identity on it compare to previous one
+- there is three R groups on it
+  - R1 R3 are in the trans group
+  - R2 are in the cis group
+  - make furthest from the molecule as possible
+  - form the steric hindrance 
+  
+- on the formation of peptide bond, there is a possible resonance structure out there
+  - almost 40% double bond
+  - it makes out a plane
+  - on the right peptide bond there is also a plane
+  - he said on the test maybe he shall test us to draw the plane
+
+- `swivel carbon`
+  - the carbon connect those two plane
+  - the carbon as intersection area of the carbon are able to rotate
+  - he said better remember those terms
+  - $\phi$ and $\psi$ represent the angles that can rotate
+  - technically, it can rotate 0 --> 360
+  - ![alt text](/image/image.png)
+
+### real world oligopeptide hormones ###
+
+he said remember property of it below, not the structure
+
+- C-Y-F-Q-N-C-P-R-G-NH2
+  - this is inside the blood stream (hormone)
+  - there is one NH2 on the C terminus that put by enzyme
+    - it make it can last longer in blood steam 
+  - on two cystine, there is possible to form a disulfur bond
+    - it make the overall structure connected fold by such disulfur bond 
+
+- this is called `vasopressin`
+  - raises blood pressure by constricting peripheral blood vessels
+
+similar example
+
+- C-Y-I-Q-N-C-P-L-G-NH2 
+  - this is called `oxytocin` 宫缩素
+  - there is change in slightly amino acid structually
+  - btw change in function hugely
+
+they all secreted by the pituitary gland ; ppl earned Nobel prize with isolate and synthesize them  
+
+### proteins ###
+
+-  we wanna study of structures of protein
+  - it have different levels of structure
+
+| levels of structure | structure                                              | types of bond
+|:-------------------:|:------------------------------------------------------:|:--------------
+|1o primary           | linear amino acid                                      | covalent bonds
+|2o secondary         | alpha helix ; beta sheet; reverse turn(𝛽-bend)         | hydrogen bonds
+|3o tertiary          | 3D shape; water make outside is the non-polar          | hydrophobic effect + 3 other weak bonds + disulfur bond , btw mainly hydrophobic effect (important on quiz he said)
+|4o quaternary        | multiple subunits; most end in even number of subunits | hydrophobic effect + 3 other weak bonds(mainly this) + -s-s
+
+- sometimes different subunits communicate with each other
