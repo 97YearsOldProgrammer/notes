@@ -183,3 +183,23 @@ they also call something `local function` --> this means function whoever locate
 | `%%`              | Prints a single percent sign (`%`).                                        
 | `\\`              | Prints a single backslash (`\`).                                           
 | `\t`              | Prints a tab.                                                              
+
+----------------------------------------------------------------------------------------------------------
+
+## more about the array of matlab ##
+
+matlab have multiple nice function and different arrays for calculation out there
+- logic array
+- normal linear algebra array
+
+### array calculation operator ###
+
+| Element-wise operator | Equivalent function | Description                         |
+|-----------------------|---------------------|-------------------------------------|
+| `+`                   | `plus(a,b)`         | Addition                            |
+| `-`                   | `minus(a,b)`        | Subtraction                         |
+| `.*`                  | `times(a,b)`        | Element-wise array multiplication   |
+| `.^`                  | `power(a,b)`        | Element-wise array exponentiation   |
+| `./`                  | `rdivide(a,b)`      | Element-wise array division         |
+
+the logical operator also plays with similar way for array calculation

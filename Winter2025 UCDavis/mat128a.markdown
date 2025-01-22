@@ -1,19 +1,37 @@
 # mat128a #
 
 
-- [1st lecture](#1st-lecture)
-  - [IEEE-754 Standard](#ieee-754-standard)
-- [2nd lecture](#2nd-lecture)
-  - [more on question about how computer represent numerical stuff](#more-on-question-about-how-computer-represent-numerical-stuff)
-  - [abosolute and relative error](#abosolute-and-relative-error)
-  - [how computer did the mathmatical operation for floating calculation](#how-computer-did-the-mathmatical-operation-for-floating-calculation)
-- [3rd lecture](#3rd-lecture)
-  - [Taylor expansion](#taylor-expansion)
-  - [Lagrange interpolation](#lagrange-interpolation)
-- [4th lecture](#4th-lecture)
-  - [lagrange basis function](#lagrange-basis-function)
-  - [Why lagrange is better than Taylor approximation](#why-lagrange-is-better-than-taylor-approximation)
-  - [python code for lagrange basis](#python-code-for-lagrange-basis)
+- [mat128a](#mat128a)
+  - [summary](#summary)
+  - [1st lecture](#1st-lecture)
+    - [IEEE-754 Standard](#ieee-754-standard)
+  - [2nd lecture](#2nd-lecture)
+    - [more on question about how computer represent numerical stuff](#more-on-question-about-how-computer-represent-numerical-stuff)
+    - [abosolute and relative error](#abosolute-and-relative-error)
+    - [how computer did the mathmatical operation for floating calculation](#how-computer-did-the-mathmatical-operation-for-floating-calculation)
+  - [3rd lecture](#3rd-lecture)
+    - [Taylor expansion](#taylor-expansion)
+    - [Lagrange interpolation](#lagrange-interpolation)
+  - [4th lecture](#4th-lecture)
+    - [lagrange basis function](#lagrange-basis-function)
+    - [Why lagrange is better than Taylor approximation](#why-lagrange-is-better-than-taylor-approximation)
+    - [python code for lagrange basis](#python-code-for-lagrange-basis)
+  - [5th lecture](#5th-lecture)
+    - [lagrange error approximation](#lagrange-error-approximation)
+    - [technique for doing lagrange interpolation](#technique-for-doing-lagrange-interpolation)
+
+----------------------------------------------------------------------------------------
+
+## summary ##
+
+| lecture      | content
+|:------------:|:-------
+| lecture1     | IEEE-754 with double precision
+| lecture2     | absolute error and relative error
+| lecture3     | taylor expansion, [lagrange interpolation](https://www.youtube.com/watch?v=nvkX1Bd90Gk)
+| lecture4     | lagrange basis function
+| lecture5     | approximation theorem, taylor,lagrange error approximation
+| lecture6     | Neville's method(optimized lagrange interpolation), hermite interpolation
 
 ----------------------------------------------------------------------------------------
 
@@ -76,6 +94,8 @@ this is also called `double precision`
 ----------------------------------------------------------------------------------------
 
 ## 2nd lecture ##
+
+a key thing to remember here after the HW1 is , whenever we are doing the chopping or rounding, we shall check out our siginificant digit problem, that sometimes we might misunderstand the siginificant digit, it counts as whenever we reach the first non-zero value instead of all those zeros in our consideration
 
 ### more on question about how computer represent numerical stuff ###
 
