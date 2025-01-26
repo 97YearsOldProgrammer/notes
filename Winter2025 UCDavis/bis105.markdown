@@ -518,3 +518,158 @@ they all secreted by the pituitary gland ; ppl earned Nobel prize with isolate a
 |4o quaternary        | multiple subunits; most end in even number of subunits | hydrophobic effect + 3 other weak bonds(mainly this) + -s-s
 
 - sometimes different subunits communicate with each other
+
+------------------------------------------------------------------------------------------------
+
+## lecture 7 ##
+
+- primary structure could transfer into the tertiary structrue because of the protein folding
+  - tertiary structure are most thermodynamically stable
+
+- example: `angiogenin` 血管蛋白生成素 17000MW
+  - this is used for forming new blood vessels
+  - through protein sequencing, we could tell this matches with a rare RNase
+
+- X-ray crystallography
+  - this is used to study the structual of the tertiary protein?
+  - sending x ray into it, it's gonna decide the real 3D structure
+
+- reason why we need thoses techniques
+  - so that we could figure out the real structure of it
+
+### secondary structure ###
+
+- reverse turn/beta-bent
+  - given a sequence of aa
+  - given beta-bend shape, there is hydrogen bond forms between C-terminus and N-terminus 
+
+- alpha-helix; right-handed
+  - he said this is the only thing  ought to remember 
+  - 99% percent of alpha-helix are right-handed 
+  - R-groups on the outside, pointing downward
+  - residue 1H-bonds with resiude 4
+  - ($\phi, \psi$) = (-60o, -50o)
+  - number of H-bonds = n -4 
+  - avergae length = 10 a.a. residues
+    - larger than that is no longer alpha-helix 
+  - he said it tooks energy to rotate such alpha-helix ; it works once energy get in 
+  - reasons make $\alpha$ helix form
+    - h-bonds
+    - steric hindrance of R-groups; some of them are good
+    - non-polar interior of protein 
+  
+| R-groups that prevent $\alpha$-helix | reason about this
+|:------------------------------------:|:------------------
+| glycine                              | this is too flexible
+| proline                              | wrong geometry ; no H on N for hydrogen bond formation
+| -/- ; +/+                            | electrostatic repulsion
+| W - W ; F - F                        | too big for too much steric hindrance
+| serine                               | prefers hydrogen bond with H2O rather than alpha helix
+
+### continue study on protein ###
+
+- $\beta$-pleated sheet
+  - there shall be parallel errow as protein structure
+
+| there is two possible structure | details
+|:-------------------------------:|:-------
+| parallel $\beta$-pleated sheet  | ($\phi, \psi$) = (-120o, -115o)
+| antiparallel                    | ($\phi, \psi$) = (-140o, -140o) ; this is more stable than parallel ; and this could stack together in the antiparallel way
+
+### myoglobin ###
+
+this is the oxygen buffer
+
+- myoglobin have a sort of colours
+  - he said there is sort of thing control the chemistry through oxygen for myoglobin
+
+- start with the membrane and ETC in mitrochondria 
+  - myoglobin is a single small polypeptide chain
+  - whenever oxygen is crossing back and forward through membrane
+  - they bind to oxygen weakly, and not changing them
+    - oxidized once binds to oxygen
+    - maintain the oxygen in the cell
+    - example: wheals, it can hold the breath since tons of myoglobin holds the oxygen
+  - Mb 1700MW ; the functional protein has a heme
+
+- heme in myoglobin
+  - protoporphyrin IX + Fe+2
+  - if there is no heme there; it becomes apoprotein
+    - apo --> means without
+    - apoprotein --> protein without function   
+
+------------------------------------------------------------------------------------------------
+
+## lecture 8 ##
+
+start with how myoglobin worked, i missed some information, better rewatch the record
+
+### mechanism of heme ###
+
+- myoglobin have multiple $\alpha$-helix
+  - in the deoxy myoglobin 
+
+- Lloyd Ingraham from UCDavis proved something quantum mechanics about this
+  - d-obirtals of iron2+ in the deoxy myoglobin
+  - the electron would in a `high-spin` format
+    - `high-spin` are most are inside the un-pair 
+    - once oxygen present, it's gonna change the d-orbital of them
+  - the reason the iron is somehow away from those nitrogen are because this reason
+  - once the contact with oxygen, it becomes the `low-spin` format
+
+![alt text](/image/image1.png) 
+
+- most oxygen is being absorbed by the mitrochondria, myoglobin only have them a while
+
+lets look another side of the oxygen that contact with the iron2+
+
+![alt text](/image/image2.png)
+
+- `distal histidine`
+  - not gonna form a covalent bond
+  - it's too away from the ion
+  - another side is connect to the oxygen
+  - they are adding some protection to the oxygen with forming a slightly proton
+  - this somehow stop carbon-monoxide contact contact with this
+
+- we could make another test on the how heme contact with carbon monoxide
+  - there is many conjugated double bond
+  - they could change to brown from red  
+  - he said smoke also related to this
+  - distal histidine is making carbon monoxide having 100 lower as binding
+
+- `sandwich`
+  - O2 could binds by both heme
+  - Fe+2 --> Fe+3
+  - it make those heme no longer able to bind oxygen again
+  - this is possible oxidation ; once two myoglobin have heme being too close to each other
+
+- the protein are able to twist the ability of electron oritbal
+  - x-ray crystallgraphy could prove these
+  - on the x-ray crystallgraphy 
+    - red are heme
+    - blue are chain
+    - yellow are histidine
+    - CO as magenta binding with a angle
+
+- `cuvette experiment on Mb`
+  - initial experiment: cuvette fills with some Mb and buffers  
+    - pH = 7.2 are mostly muscle cells for animals, btw different animals have different effection
+  - we start putting oxygen into the cuvette
+  - we use the light to test how well the light could penetrate verses how much oxygen bound forms
+  - experiment result: hypoerbola graph; oxygen bounded verses pressure of oxygen
+    - hyperbola are common in biology
+    - it something growths exponentially and reach certain limit/threshold 
+  - experiment conclusion: the molecules of hemes are mostly acting independently
+    - they don't communicate with each other
+    - it's 3o structure; subunits don't communicate with each other
+  - $P_{50}$ means moment that 50% of oxygen are binding to heme
+  - heme are able to be tested through light ; 3dimensional structure is very delicate
+
+- `packing ratio`
+  - packing ratio = $\frac{volume-due-to-vanderWaals-radii}{actual-volume}$
+  - it's protein have a packing ratio of 1; it means the protein cannot move
+    - everywhere inside this protein is fulfilled
+  - by x-ray ratio, mostly protein interior is `0.75` 
+  - for oil-droplet, it have 0.70 packing ratio
+  - non-polar and dynamically moved holes

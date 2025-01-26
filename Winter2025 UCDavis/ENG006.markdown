@@ -203,3 +203,7 @@ matlab have multiple nice function and different arrays for calculation out ther
 | `./`                  | `rdivide(a,b)`      | Element-wise array division         |
 
 the logical operator also plays with similar way for array calculation
+
+### logical array ###
+
+if we throw the logical array into the non-linear array, it's gonna return a column array as values

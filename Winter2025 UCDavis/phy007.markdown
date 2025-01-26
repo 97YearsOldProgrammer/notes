@@ -324,3 +324,76 @@ OH next Tuesday: 5:00pm - 6:30 pm  better come that time
  
 - electron goes from negative to positive
   - opposite electron are attract to each other 
+  
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## lecture 3 ##
+
+analogy for electrical system by 
+
+| static water system                                           | electrical equivalent
+|:-------------------------------------------------------------:|:-------------------
+| pipe with resistance $Δ\frac{E}{V} = -IR$                     | conductor with resistance (resistor) $ΔV = Vhigh - Vlow = IR$ $[R] = \frac{V}{A} = Ohms(\omega)$
+| pipe without resistance                                       | conductor without resistance $ΔV = 0$
+| Pump （source of $\frac{E}{V}$) creator a pressure difference | Battery / Electromotive Force (EMF) ; source of voltage ; creator a voltage difference between its two terminals ; moves electron from low to high V
+
+  
+### Kirchhoff's laws ###
+
+| rule name      | details
+|:--------------:|:--------
+| loop rule      | sum of voltage changes around a complete loop is zero $\sum_{complete loop}ΔV=0$
+| junction rule  | more general version of continuity equation ; electric charge is conserved ; electric charge entering some location must leave that location $I total in = I total out$
+
+### networks of resistors ###
+
+| different resistor combination | details
+|:------------------------------:|:-------
+| resistors in series            | bunch of resistor in the same line ; R1--R2--.... ; given a Req to the whole resistor series ; easier way for simplified the circuits ; Ir1 = Ir2 = ...  ; ΔVreq = ΔVr1 + ΔVr2 + .... ; ΔV = IR ; Req = R1 + R2 + .... ; for resistor in series, total resistance increases
+| resistors in parallel          | also think about making them as Req as a total ; Ireq = Ir1 + Ir2 + ... ; ΔVr1 = ΔVr2 = .. =ΔVreq ; ΔV/Req = ΔV/R1 + ΔV/R2 + .... ; $\frac{1}{Req}$ = $\frac{1}{R1}$ + $\frac{1}{R2}$ + .... ; resistors in parallel --> total resistance goes down
+
+### electric circuit ###
+
+- a simple electric circuit
+  - an emf that creating high voltage region and low voltage region
+  - current flow from high voltage to low voltage region
+    - charge move that way for lower it's chemical potential
+  - resistance somewhere in the circuit
+  - the rest are neglectable resistance   
+
+- loop rule on such simple circuit
+  - normal circumstance : $ΔV = e$ 
+  - if we pass a resistance area : $ΔV = -IR$
+    - $e - IR=0$ 
+    - $I = \frac{e}{R}$
+
+- a hard electric circuit
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## DL4 ##
+
+- start with a simple circuit
+  - 9V battery
+  - 10Ω resistor
+  - 30Ω light
+  - 20Ω resistor 
+
+- details value
+  - $I = 0.15A$
+  - $ΔV_{resistor} = -IR = 0.15* 10Ω = 15V$
+  - $ΔV_{loop} = 0 = 9 - 1.5 - 4.5 - 3$
+
+### deduction for formula of power ###
+
+- definition of power
+  - $power = \frac{energy}{unit time}$
+  - power of a pump = $\frac{ΔE_{pump} }{time} = \frac{ΔE_{pump} }{vol} x \frac{vol}{time}$
+  - $\frac{E_{pump} }{vol} = ΔP$
+  - $\frac{vol}{time} = I$
+
+- $P_{battery} = e_{(ΔV_{battery})}*I$
+
+### deduction for formula of power of a resistor###
+
+- definition of 

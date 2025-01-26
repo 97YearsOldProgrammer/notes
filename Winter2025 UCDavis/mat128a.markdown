@@ -330,3 +330,19 @@ $$| f(x) - P(x)| = | \frac{ f^{n+1}(δ) }{ (n+1)! }(x-xo)(x-x1)...(x-xn) |$$
 - how are we gonna solve P0,1,2(x) through P0,1(x) and P1,2(x)
   - $P0,1,2(x) = \frac{1}{x2-x0} [(x-xo)P1,2 - (x-x2)P0,1]$
   - this is the formula used for calculating higher degree by using answer of lower order 
+
+----------------------------------------------------------------------------------------------------
+
+## 7 lecture ##
+
+reivew lecture, ta taught us about how to do those interpolation questions, yeah pre-midterm preview
+
+| typical questions                                   | how to solve them
+|:---------------------------------------------------:|:------------------
+| lagrange interpolation estimate error approximation | use error formula and make derivative of original function ; examine critical points for maximum of the function
+| lagrange interpolation exact error approximation    | $|f(x) - P(x)|$ ; check f(x) ; check critical points
+| lagrange conceptual check                           | purely conceptual, better be smarter
+| neville's method                                    | understand how to calculate lagrange interpolation wisely
+| neville's method conceptual check                   | understand how neville's method save up computation power
+| Hermite interpolation                               | understand how the hermite interpolation to make calculation
+| hermites interpolation conceptual check             | know how hermite interpolation gonna ; hermite polynomial gonna make a exact function? 

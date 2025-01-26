@@ -13,8 +13,8 @@ def lagrange_basis(x, x_data,k):
     return Lk
 
 x_eval = np.linspace(0.8, 1.8, 300)   
-y_eval = [lagrange_basis(xx ,x_points , 0) for xx in x_eval]
-L_points = [lagrange_basis(xx , x_points, 0) for xx in x_points]
+y_eval = [lagrange_basis(xx ,x_points , 2) for xx in x_eval]
+L_points = [lagrange_basis(xx , x_points, 2) for xx in x_points]
 plt.figure( figsize= (8,5) )
 plt.plot(x_points, L_points, 'ro' , label = 'L_n0 at Interpolation Points')
 plt.plot(x_eval, y_eval, 'b-', label = 'L_n0')
@@ -28,7 +28,7 @@ plt.show()
 def lagrange_interpolation(x, x_data, y_data):
     result = 0.0
     for i in range(len(x_data)):
-        result += x * y_data[i]
+        result += y_data[i] * lagrange_basis(x, x_data, i)
     return result
 
 y_eval = [lagrange_interpolation(xx, x_points, y_points) for xx in x_eval]
