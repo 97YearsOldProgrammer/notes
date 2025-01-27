@@ -2,6 +2,17 @@
 
 - [lecture1](#lecture-1)
 - [lecture2](#lecture-2)
+- [lecture3](#lecture-3)
+- [lecture4](#lecture-4)
+- [lecture6](#lecture-6)
+- [lecture7](#lecture-7)
+
+| what we learned for solving ODE  | situation that they worked | how they worked
+|:--------------------------------:|:--------------------------:|:---------------
+| integrating methods              | linear ODE                 | for some system of equations, we trynna to integrat both sides that gonna probably generates some not-really osculating btw good for integrating and differentiate stuff, like $ln(something)$ or $e^{something}$
+| separation of variable           | non-linear ODE             |
+| autonomous ODE                   | 
+
 ----------------------------------------------------------------------------------------------------------------
 
 ## lecture 1 ##
@@ -371,3 +382,148 @@ Resistance proportional to downward velocity v(t) of mass
   -  y(0) = 2 
   -  $2 = Ce^{0}$ ; c = 2
   -  $y(t) = e^{-\frac{1}{2}t^{2}} \int_{0}^{t}e^{\frac{1}{2}s^{2}}ds + 2e^{-\frac{1}{2}t^{2}}$
+
+----------------------------------------------------------------------------------------------------------------
+
+## lecture6 ##
+
+i lost the information of lecture 5, basically the professor introduce another methods for solving ODEs that's different than the previous method we hold; called `separation of variable`
+
+- $y' = t - ty^2 = t(1 - y^2)$
+  - $\frac{dy}{dt} = t(1 - y^2)$
+  - $\int \frac{dy}{1 - y^2} = \int t \, dt + C$
+  - $- \int \frac{dy}{y^2 - 1} = \frac{1}{2}t^2 + C$
+  - we need to find the value of $\int \frac{dy}{y^2 - 1}$
+    - partial fractional involved in quadratic polynomial
+    - $y^2 - 1 = (y - 1)(y + 1)$
+    - $\frac{1}{y^2 - 1} = \frac{A}{y - 1} + \frac{B}{y + 1}$
+    - $\frac{1}{y^2 - 1} = \frac{A(y + 1) + B(y - 1)}{y^2 - 1}$
+    - $1 = A(y + 1) + B(y - 1)$
+    - when y = 1  --> A = $\frac{1}{2}$
+    - when y = -1 --> B = -$\frac{1}{2}$
+  - we would get the answer that $\frac{1}{y^2 - 1} = \frac{1}{2} \cdot \frac{1}{y - 1} - \frac{1}{2} \cdot \frac{1}{y + 1}$'
+    - $\int \frac{dy}{y^2 - 1} = \frac{1}{2} \ln|y - 1| - \frac{1}{2} \ln|y + 1| + C$
+    - $\frac{1}{2} \ln \left| \frac{y - 1}{y + 1} \right| + C = \frac{1}{2}t^2 + C$
+    - $\ln \left| \frac{y + 1}{y - 1} \right| = t^2 + C$
+    - $\left| \frac{y + 1}{y - 1} \right| = e^C e^{t^2}$
+    - $\pm \frac{y + 1}{y - 1} = e^C e^{t^2}$
+    - $\frac{y + 1}{y - 1} = C e^{t^2}$
+    - then we are gonna solve the general solution for C
+    - $y + 1 = C e^{t^2} (y - 1)$
+    - $y + 1 = C e^{t^2} y - C e^{t^2}$
+    - $y - C e^{t^2} y = -C e^{t^2} - 1$
+    - $(1 - C e^{t^2}) y = -(C e^{t^2} + 1)$
+    - $y(t) = \frac{C e^{t^2} + 1}{C e^{t^2} - 1}$
+
+- discussion
+  - original solution  y' + ty^{2} = ty 
+  - when c=0 --> y(t)= -1
+  - but when c = inf; y(t)= 1
+  - this could happen when we try to solve those ODE
+  - he go over some nature of the value of C, well pretty complicated, btw straight-forward
+  - these are some question we shall ponder when we looking those solution for those ODE
+
+### Application(2.3) vaporation of a droplet ###
+
+a spherical droplet evaporates at a rate proportional to its surface area. Find an ODE for volume of droplet. 
+
+| variables      | notation 
+|:--------------:|:---------
+| V(t)           | volume at time t
+| S(t)           | surface area at time t
+| $\frac{dV}{dT}$| = - $\gamma$ S 
+| $\gamma$       | constant of proportionality
+| r(t)           | radius of sphere
+
+- numerical details of value above  
+  - $V(t) = \frac{4}{3} \pi r^3$
+  - $S(t) = 4 \pi r^2$
+  - $r = \left( \frac{3V}{4\pi} \right)^{1/3}$
+  - $S = 4\pi \left( \frac{3V}{4\pi} \right)^{2/3}$
+  - $S = 4\pi \left( \frac{3}{4\pi} \right)^{2/3} \cdot V^{2/3}$
+  - $S = (36\pi)^{1/3} V^{2/3}$
+  - $\frac{dV}{dt} = -kV^{2/3}$
+  - $k = (36\pi)^{1/3} \gamma$
+
+- initial value problem on this system V(0) = Vo >o, non-proportional ; autnomous equation
+
+----------------------------------------------------------------------------------------------------------------
+
+## lecture7 ##
+
+autonomous ODE are also gonna present in the midterm ; we just need to know how to transform system into ODE   
+this lecture continue the example of droplet model
+
+- dimension analysis
+  - dimensions of all terms in an equation have to be same
+  - dimension is some units of these variables?
+  - like no-constant form of those variables
+  - $[V] = L^3$
+  - $[S] = L^2$
+  - $\left[\frac{dV}{dt}\right] = \frac{L^3}{T}$
+  - $\left[\gamma S\right] = \left[\gamma\right] L^2$
+  - $\frac{L^3}{T} = \left[\gamma\right] L^2 \implies \left[\gamma\right] = \frac{L}{T}$ (Velocity)
+
+- initial value problem
+  - $\frac{dV}{dt} = -k V^{2/3}$
+  - $k = (36 \pi)^{1/3} \gamma$
+  - $V(0) = V_0$ (Initial Condition)
+  - these ODE are autonnomous(not related to t explicitly) 
+  - separate variables
+    - $\int \frac{dV}{V^{2/3}} = -\int k \, dt + C$
+    - $3 V^{1/3} = -kt + C$
+  - Set $t = 0$:
+    - $3 V_0^{1/3} = 0 + C \implies C = 3 V_0^{1/3}$
+    - $3 V^{1/3} = 3 V_0^{1/3} - kt$
+    - $V^{1/3} = V_0^{1/3} - \frac{1}{3} kt$
+    - $V(t) = \left[V_0^{1/3} - \frac{1}{3} kt\right]^3$
+  - we shall also learn how to interpret this kinda of system
+    - like drawing the graph out 
+    - ![alt text](image/image4.png)
+    - $V(t_*) = 0$ when $V_0^{1/3} - \frac{1}{3} k t_* = 0$
+    - $t_* = \frac{3 V_0^{1/3}}{k}$
+    - the droplet gonna evaporate 
+    - physically continue by v(t) = 0 ; t > t*
+  - predicts droplet completely evaporates in a finite time
+  - we could do dimension analysis for proving our answer backward
+    - $[t_*] = \frac{[V_0^{1/3}]}{[k]} = \frac{L}{L/T} = T$
+
+- compare with evaporation rate verses volume
+  - $\frac{dV}{dt} = -kV$
+  - $V(0) = V_0$
+  - $\Rightarrow V(t) = V_0 e^{-kt}$
+
+### new topic about autonomous equations{section 2.5} ###
+
+we skip the section 2.4 a little bit, btw come back later on 
+
+- definition of autonomous equation
+  - any function or system that don't have explicit t-dependence
+
+- `constant solution; steady state; equilibrium`
+  - suppose F(c) = 0 --> y(t) = c is the solution
+  - they are not chaning throughout the time
+
+- if y(t) is a solution, so is z(t) = y(t + t0) for any constant
+  - $y'(t) = F(y(t))$
+  - $z'(t) = y'(t + t_0) \cdot (t + t_0)' = y'(t + t_0)$
+  - $= F(y(t + t_0)) =F(z(t))$
+
+- we can solve any autonomous equation by separation of variable
+  - $y' = F(y)$
+  - $\int \frac{dy}{F(y)} = \int dt$
+  - $P(y) = t + C$
+  - $P'(y) = \frac{1}{F(y)}$ 
+
+- `Phase line`
+  - F(y) = 0; we are at equilibruim
+  - F(y) < 0; y(t) increasing
+  - F(y) > 0; y(t) decreasing 
+  - introduce phase line coordinates y
+  - plot F(y) vs y
+  - ![alt text](/image/image5.png)
+  - y1 - y5 are all equilibria
+  - y1, y3, y5 are unstable equilibrium
+    - the points are moving away 
+  - y2, y4 are stable equilibrium
+    - these points are moving inwards 
