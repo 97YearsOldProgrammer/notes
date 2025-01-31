@@ -9,8 +9,8 @@
 
 | what we learned for solving ODE  | situation that they worked | how they worked
 |:--------------------------------:|:--------------------------:|:---------------
-| integrating methods              | linear ODE                 | for some system of equations, we trynna to integrat both sides that gonna probably generates some not-really osculating btw good for integrating and differentiate stuff, like $ln(something)$ or $e^{something}$
-| separation of variable           | non-linear ODE             |
+| seperation of variable           | linear ODE                 | for some system of equations, we trynna to integrat both sides that gonna probably generates some not-really osculating btw good for integrating and differentiate stuff, like $ln(something)$ or $e^{something}$
+| integrating methods              | non-linear ODE             |
 | autonomous ODE                   | 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -527,3 +527,41 @@ we skip the section 2.4 a little bit, btw come back later on
     - the points are moving away 
   - y2, y4 are stable equilibrium
     - these points are moving inwards 
+
+----------------------------------------------------------------------------------------------------------------
+
+## lecture 8 ##
+
+exam in friday, gonna cover all material into the autonomous equation, gemoteric way of Autonomous equation
+
+### property of phase lines ###
+
+- $y' = F(y)$
+  - consider solution y(t) as a point moving along a phase line with coordinate y 
+  - imagine a y(t) moving along the y curve until y(t')
+  - phase line don't track of the t btw track change in value of y(t)
+
+- equilibrium solution of ODE
+  - F(y*) = 0
+  - y(t) = y*
+
+- F(y) > 0
+  - y(t) increasing at that value of y 
+  - y(t) moves to right on phase line
+
+- F(y) < 0
+  - y(t) decreasing (as t increases) 
+  - y(t) moves to left on phase line
+
+- three graphs to plot 
+  - F(y) vs y to see where, F(y) = 0, F(y) > 0 or < 0
+  - plot phase line
+  - plot graphs of y(t) vs t for typical solutions
+
+- example y' = y -2 ; F(y) = y -2
+  -  draw out the graph of F(y) to y
+  -  ![alt text](/image/image6.png)
+  -  trajectory of phase line
+    - it shows all the solution of such differential equations
+  - we draw another graph of y verse t
+    -  
